@@ -11,5 +11,3 @@ alertBoxBtn.addEventListener('click', function () {
    alertBox.classList.remove('active'); 
    input.value = '';
 });
-
-//dkasjdla
