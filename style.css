@@ -11,17 +11,49 @@
 }
 
 header {
-    height: 200px;
+    height: 220px;
     background-color: #66b394;
     box-shadow: 0px 0px 10px 0px #000;
+    position: relative;
 }
 
-header h1 {
-    text-align: center;
-    line-height: 200px;
+header .header-logo {
+    width: 500px;
+    height: 150px;
+    /* border: 1px solid #000; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -65%);
+    background-image: url(img/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+}
+
+header .title-homework {
+    position: absolute;
+    left: 50%;
+    top: 77%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 24pt;
+    font-family: "Comic Sans MS";
+}
+
+/* header div {
     color: #fff;
     font-size: 40pt;
-}
+    position: absolute;
+    border: 1px solid #000;
+    width: 444px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+} */
 
 content {
     padding: 10px;
