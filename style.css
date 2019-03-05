@@ -38,7 +38,7 @@ header .title-homework {
     left: 50%;
     top: 77%;
     transform: translateX(-50%);
-    color: #fff;
+    color: rgba(255, 255, 255, 0.8);;
     font-size: 24pt;
     font-family: "Comic Sans MS";
 }
