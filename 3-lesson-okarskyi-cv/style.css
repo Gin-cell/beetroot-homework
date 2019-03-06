@@ -1,0 +1,80 @@
+.head {
+    width: 100%;
+    height: 300px;
+	margin: 0 auto;
+    display: flex;
+}
+.name{
+    width: 100%;
+    padding-left: 100px;
+    opacity: 0;
+}
+.pic img {
+    width: 300px;
+}
+.name img{
+    width: 20px;
+}
+
+.pic {
+    opacity: 0;
+}
+
+/**********Show-animations**********/
+
+.showPhoto {
+    animation: show 1s forwards;
+    animation-delay: 500ms;
+}
+
+.showName {
+    animation: show 1s forwards;
+    animation-delay: 1000ms;
+}
+
+.showSkills {
+    animation: show 1s forwards;
+    opacity: 0;
+    animation-delay: 1500ms;
+}
+
+.showEducation {
+    animation: show 1s forwards;
+    opacity: 0;
+    animation-delay: 2000ms;
+}
+
+.showLanguages {
+    animation: show 1s forwards;
+    opacity: 0;
+    animation-delay: 2500ms;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: 
+            rotate(45deg)
+            scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: 
+            rotate(0deg)
+            scale(1);
+    }
+}
+
+/**********Color-for-text**********/
+
+
+* {
+    animation: green 1s forwards;
+    animation-delay: 3000ms;
+}
+
+@keyframes green {
+    from {color: #000}
+    to {color: green}
+}
