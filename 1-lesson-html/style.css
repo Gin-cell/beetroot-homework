@@ -9,6 +9,7 @@
     position: relative;
     width: 750px;
     height: 100vh;
+    box-shadow: 0 0 10px -1px #000;
     /* background-color: #555; */
 }
 
@@ -38,7 +39,7 @@
 
 .header {
     height: 200px;
-    background: #fff;
+    /* background: #fff; */
     display: grid;
     grid-template-columns: 25% 1fr;
 }
