@@ -117,3 +117,177 @@ footer {
         opacity: 1;
     }
 }
+
+
+
+/***************POPUP-SOCIAL***************/
+
+#button {
+    background-color: rgb(186, 36, 85);
+    border-radius: 10px;
+    
+}
+
+.blure-bg {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    animation: showBlure 500ms forwards;
+    display: none;
+    position: fixed;
+    z-index: 1;
+}
+
+.main {
+    width: 380px;
+    height: 200px;
+    background-color: #66b394;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    opacity: 0;
+    /* display: none; */
+    z-index: 10;
+    animation: showMain 500ms forwards;
+    animation-delay: 500ms;
+    box-shadow: 0 0 15px -2px #000;
+}
+
+.social-first {
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-first div {
+    width: 70px;
+    height: 70px;
+    /* background-color: #fff; */
+    border-radius: 50%;
+}
+
+.social-first .fecebook {
+    background-image: url(social-icons/facebook.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0 0 4px 1px #000;
+}
+.social-first .github {
+    background-color: #fff;
+    background-image: url(social-icons/github.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0 0 4px 1px #000;
+}
+.social-first .instagram {
+    background-image: url(social-icons/instagram.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0 0 4px 1px #000;
+}
+
+.social-second {
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-second div {
+    width: 300px;
+    background-color: #000;
+    height: 80px;
+    background-image: url(social-icons/codepen.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0 0 4px 1px #000;
+}
+
+
+.left {
+    width: 190px;
+    height: 200px;
+    background-color: #66b394;
+    border-radius: 20px 0px 0 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-100%, -50%);
+    animation: showLeft 500ms ease-in forwards;
+    /* display: none; */
+    
+}
+.right {
+    width: 190px;
+    height: 200px;
+    background-color: #66b394;
+    border-radius: 0px 20px 20px 0px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    animation: showRight 500ms ease-in forwards;
+    /* display: none; */
+}
+
+.blure-bg.active {
+    display: block;
+}
+
+/* .left.active {
+    display: block;
+}
+.right.active {
+    display: block;
+}
+
+.main.active {
+    display: block;
+} */
+
+@keyframes showBlure {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+@keyframes showLeft {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: 50%;
+    }
+}
+@keyframes showRight {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 50%;
+    }
+}
+@keyframes showMain {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
