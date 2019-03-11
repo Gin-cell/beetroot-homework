@@ -9,12 +9,7 @@
 </head>
 <body>
 
-    <div class="redirectors">
-        <input type="button" onclick='add_tags("bold");'>
-        <input type="button" onclick='add_tags("italic");'>
-        <input type="button" onclick='add_tags("underline");'>
-        <input type="button" onclick='add_tags("");'>
-    </div>
+    <input type="button" class="redir8"'>
     
     <div class="controls">
         <div class="title">
@@ -23,14 +18,23 @@
 
         </div>
         <div class="styling">
-            <i class="fa fa-font custom"></i>
+            <div class="redirectors">
+                <input type="button" id="redir1" onclick="add_tags('bold')">
+                <input type="button" class="redir2" onclick='add_tags("italic");'>
+                <input type="button" class="redir4" onclick='add_tags("underline");'>
+                <input type="button" class="redir3" onclick='add_tags("justifyFull");'>
+                <input type="button" class="redir5" onclick='add_tags("justifyLeft");'>
+                <input type="button" class="redir6" onclick='add_tags("justifyCenter");'>
+                <input type="button" class="redir7" onclick='add_tags("justifyRight");'>
+            </div>
+
             <i class="fa fa-bold custom"></i>
             <i class="fa fa-italic custom"></i>	
             <i class="fa fa-underline custom"></i>	
             <i class="fa fa-align-justify custom"></i>
             <i class="fa fa-align-left custom"></i>	
             <i class="fa fa-align-center custom"></i>	
-            <i class="fa fa-align-right custom" onclick="alert('right')"></i>	
+            <i class="fa fa-align-right custom"></i>	
         </div>
 
     </div>

@@ -73,6 +73,7 @@ body {
     box-shadow: 0 0 20px -3px #000;
     padding-left: 40px;
     /* line-height: 60px; */
+    /* text-align: center; */
 }
 
 i.custom:nth-child(1) {
@@ -146,10 +147,39 @@ i.custom:hover {
 }
 
 .redirectors {
-    height: 30px;
-    width: 400px;
-    background-color: #fff;
-    position: fixed;
-    top: 0;
-    z-index: 0;
+    height: 34px;
+    width: 314px;
+    /* background-color: #fff; */
+    position: absolute;
+    top: 212px;
+    left: 105px;
+    opacity: 0.5;
+    line-height: 30px;
+    z-index: 2;
+    display: flex;
+}
+
+.redirectors input {
+    /* margin-left: 2px; */
+    background-color:rgba(255, 0, 0, 0);
+    flex-grow: 1;
+    border: none;
+}
+
+.redirectors input:focus {
+    outline: none;
+}
+
+.redirectors input:hover {
+    cursor: pointer;
+}
+
+.redir8 {
+    visibility: hidden;
+}
+
+/******HOVERS****/
+
+.fa-bold.active {
+    color: #fff;
 }
