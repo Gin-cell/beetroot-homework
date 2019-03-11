@@ -48,15 +48,13 @@ boldRedirect.addEventListener('mouseover', function () {
 
 //shift+r reset styles
 //https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes
+/*
 window.onkeypress = function(event) {
     if (event.keyCode == 82) {
        alert('esc');
     }
  }
-
-
-
-
+ */
 
  function add_tags(x) {
     var z = x.toString()
