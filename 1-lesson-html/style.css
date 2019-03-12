@@ -1,7 +1,13 @@
+@font-face {
+    font-family: "Custom Font";
+    src: url(fonts/Proxima\ Nova\ Bold.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Custom Font"
 }
 
 #video-bg {
