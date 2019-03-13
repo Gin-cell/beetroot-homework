@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Comic";
+    src: url(fonts/ComicSansMS3.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -41,7 +46,8 @@ header .title-homework {
     transform: translateX(-50%);
     color: rgba(255, 255, 255, 0.8);;
     font-size: 24pt;
-    font-family: "Comic Sans MS";
+    /* font-family: "Comic Sans MS"; */
+    font-family: "Comic";
 }
 
 .content {
