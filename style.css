@@ -7,7 +7,6 @@
 #site-holder {
     width: 100%;
     min-height: 100vh;
-    /* background-color: yellow; */
     opacity: 0;
     animation: zoomIn 1100ms forwards;
     animation-delay: 500ms;
@@ -23,7 +22,6 @@ header {
 header .header-logo {
     width: 500px;
     height: 150px;
-    /* border: 1px solid #000; */
     position: absolute;
     left: 50%;
     top: 50%;
@@ -46,23 +44,10 @@ header .title-homework {
     font-family: "Comic Sans MS";
 }
 
-/* header div {
-    color: #fff;
-    font-size: 40pt;
-    position: absolute;
-    border: 1px solid #000;
-    width: 444px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-} */
-
-content {
+.content {
     padding: 10px;
-    /* background-color: #ccc; */
     width: 100%;
-    position: absolute;
+    position: relative;
 }
 
 .homework-list {
@@ -70,6 +55,7 @@ content {
     margin: 10px auto 0 auto;
     display: grid;
     grid-row-gap: 10px;
+    margin-bottom: 30px;
 }
 
 .homework-list > div {
