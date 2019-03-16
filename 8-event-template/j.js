@@ -46,3 +46,21 @@ window.addEventListener('click', function (x) {
         contact.style.borderBottom = '2px solid #e71cb4'; 
     }
 });
+
+//****************On Scroll Header****************//
+
+window.onscroll = function() {myFunction()};
+
+var design = document.querySelector(".design-battles");
+var header = document.querySelector(".header-top-bg");
+var sticky = design.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+
