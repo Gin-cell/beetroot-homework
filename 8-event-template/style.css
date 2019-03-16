@@ -193,21 +193,242 @@ p.txt-after-list {
 
 .txt-af-said {
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .battles-grid-holder {
     height: 730px;
     width: 1070px;
     background-color: #ccc;
-    margin: 0 auto;
+    margin: 0 auto 100px auto;
 }
 
 .battles-grid-holder > div {
     border: 1px solid #000;
     height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.battles-grid-holder div:nth-child(1) .grid-item {
+.battles-grid-holder div .grid-item {
     width: 290px;
-    height: ;
+    height: 355px;
+    border: 1px solid #000;
+    padding-top: 5px;
+}
+
+.battles-grid-holder div .grid-item .item-bg {
+    width: 263px;
+    height: 263px;
+    border: 1px solid red;
+    margin: 0 auto 8px auto;
+}
+
+.battles-grid-holder div .grid-item .item-sub {
+    width: 280px;
+    height: 70px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+
+.battles-grid-holder div .grid-item .item-sub h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.battles-grid-holder div .grid-item .item-sub p {
+    text-align: center;
+}
+
+.timer-title {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.timer-holder {
+    width: 850px;
+    height: 160px;
+    border: 1px solid #000;
+    margin: 0 auto 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.timer-holder > div {
+    width: 160px;
+    height: 160px;
+    border: 1px solid #000;
+    padding-top: 15px;
+}
+
+.timer-holder .timer-time {
+    font-weight: bold;
+    text-align: center;
+    font-size: 71pt;
+}
+
+.timer-holder .timer-sub {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/************SPONSORSHIP************/
+
+.sponsorship {
+    height: 430px;
+    background-color: orange;
+    padding-top: 100px;
+}
+
+.sponsorship .sponsorship-title {
+    text-align: center;
+    margin-bottom: 85px;
+}
+
+.sponsorship .sponsor-logo-holder {
+    width: 1100px;
+    height: 120px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    display: flex;
+}
+
+.sponsorship .sponsor-logo-holder div {
+    border: 1px solid #000;
+    flex-grow: 1;
+}
+
+/************JURY************/
+
+.jury-holder {
+    height: 780px;
+    background-color: #ffe9eb;
+    padding-top: 100px;
+}
+
+.jury-holder .jury-title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.jury-photos {
+    width: 1150px;
+    height: 450px;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+
+.jury-photos > div {
+    float: left;
+    width: 382px;
+    height: 100%;
+    border: 1px solid #000;
+}
+
+.jury-photos .photo-holder {
+    height: 360px;
+    width: 360px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+}
+
+.jury-photos .photo-sub-name {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.jury-photos .photo-sub-job {
+    text-align: center;
+}
+
+/************CONTACT-US************/
+
+.contact-section {
+    height: 890px;
+    background-color: #fdd1d1;
+    padding-top: 100px;
+}
+
+.contact-section .contact-us-title {
+    text-align: center;
+    margin-bottom: 85px;
+}
+
+.contact-section .contact-description {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.contact-section .contact-form-holder {
+    width: 645px;
+    height: 420px;
+    background-color: #ccc;
+    margin: 0 auto;
+}
+
+.contact-section .contact-form-holder > div {
+    border: 1px solid #000;
+}
+
+.contact-section .contact-form-holder > div:nth-child(-n+2) {
+    height: 140px;
+    width: 50%;
+    float: left;
+    display: flex;
+    flex-flow: column;
+    background-color: red;
+}
+
+.contact-form-holder div:nth-child(1) .first-name,
+.contact-form-holder div:nth-child(1) .email,
+.contact-form-holder div:nth-child(2) .last-name,
+.contact-form-holder div:nth-child(2) .web-site {
+    height: 50%;
+    background-color: yellow;
+    border: 1px solid #000;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-section .contact-form-holder > div:nth-child(-n+2) input {
+    width: 100%;
+    height: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #000;
+}
+
+.contact-section .contact-form-holder > div:nth-child(-n+2) input:focus {
+    outline: none;
+}
+
+.contact-section .contact-form-holder div:nth-child(3) {
+    height: 140px;
+    width: 100%;
+    background-color: orange;
+    float: left;
+}
+
+.contact-section .contact-form-holder div:nth-child(4) {
+    height: 140px;
+    width: 100%;
+    float: left;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.contact-section .contact-form-holder div:nth-child(4) input {
+    width: 100%;
+    height: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #000;
 }
