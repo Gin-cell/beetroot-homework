@@ -6,6 +6,10 @@
 
 /************GENERAL************/
 
+html {
+    scroll-behavior: smooth;
+}
+
 #wrapper {
     /* background-color: #ccc; */
 }
@@ -48,19 +52,28 @@
     list-style-type: none;
     float: right;
     background-color: #fff;
-    width: 450px;
+    width: 310px;
     text-align: center;
+    border: 1px solid #000;
 }
 
 .nav-holder ul li {
     display: inline-block;
     line-height: 50px;
-    width: 100px;
+    text-align: center;
+    margin-left: 10px;
 }
 
 .nav-holder ul li a {
     text-decoration: none;
     color: #000;
+    line-height: 50px;
+    display: block;
+}
+
+.nav-holder ul li a:hover {
+    color: #e71cb4;
+    border-bottom: 2px solid #e71cb4;
 }
 
 .header h1 {
@@ -402,7 +415,7 @@ p.txt-after-list {
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 2px solid #000;
+    border-bottom: 4px solid #000;
 }
 
 .contact-section .contact-form-holder > div:nth-child(-n+2) input:focus {
@@ -430,5 +443,129 @@ p.txt-after-list {
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 2px solid #000;
+    border-bottom: 4px solid #000;
+}
+
+.contact-section .contact-form-holder div:nth-child(4) input:focus {
+    outline: none;
+}
+
+.contact-section .contact-form-holder div:nth-child(4) .btn-send-message {
+    width: 150px;
+    height: 50px;
+    background-color: #555;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    margin: 30px 10px 0 auto;
+}
+
+.contact-section .contact-form-holder div:nth-child(4) .btn-send-message:hover {
+    cursor: pointer;
+    background-color: #666;
+}
+
+/************NEWSLETTER************/
+
+.newsletter-section {
+    height: 460px;
+    background-color: #eee;
+    padding-top: 75px;
+}
+
+.newsletter-section .newsletter-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.newsletter-section .newsletter-sub {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.newsletter-section .subscribe-holder {
+    width: 550px;
+    height: 60px;
+    margin: 0 auto 85px auto;
+    background-color: orange;
+}
+
+.newsletter-section .subscribe-holder > div {
+    border: 1px solid #000;
+    float: left;
+    height: 100%;
+}
+
+.newsletter-section .subscribe-holder > div:nth-child(1) {
+    width: 408px;
+    padding-right: 5px;
+}
+
+.newsletter-section .subscribe-holder > div:nth-child(1) input {
+    border: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    padding-left: 20px;
+    font-size: 14pt;
+}
+
+.newsletter-section .subscribe-holder > div:nth-child(1) input::placeholder {
+    font-size: 14pt;
+}
+
+.newsletter-section .subscribe-holder > div:nth-child(1) input:focus {
+    outline: none;
+}
+
+.newsletter-section .subscribe-holder .subscribe-btn {
+    width: 140px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #c60ebe;
+    border-radius: 12px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+.newsletter-section .subscribe-holder .subscribe-btn:hover {
+    cursor: pointer;
+    background-color: #e61cdb;
+}
+
+.social-holder {
+    width: 280px;
+    height: 72px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-holder > div {
+    border: 1px solid #000;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+/************EXTRAS************/
+
+.scroll-up-btn {
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    position: fixed;
+    top: 100%;
+    left: 100%;
+    transform: translate(-130%, -120%);
+}
+
+.scroll-up-btn:hover {
+    cursor: pointer;
 }
