@@ -76,7 +76,7 @@ html {
     width: 442px;
     height: 50px;
     text-align: center;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 
 .nav-holder ul li {
@@ -545,29 +545,37 @@ p.txt-after-list {
 
 .contact-section {
     height: 890px;
-    background-color: #fdd1d1;
+    background-color: #fff;
     padding-top: 100px;
 }
 
 .contact-section .contact-us-title {
     text-align: center;
     margin-bottom: 85px;
+    font-size: 63pt;
 }
 
 .contact-section .contact-description {
     text-align: center;
-    margin-bottom: 80px;
+    margin: 0 auto 80px auto;
+    font-size: 22pt;
+    width: 752px;
 }
 
 .contact-section .contact-form-holder {
     width: 645px;
     height: 420px;
-    background-color: #ccc;
+    /* background-color: #ccc; */
     margin: 0 auto;
 }
 
+.contact-section .contact-form-holder input::placeholder {
+    font-size: 13pt;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .contact-section .contact-form-holder > div {
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 
 .contact-section .contact-form-holder > div:nth-child(-n+2) {
@@ -576,7 +584,7 @@ p.txt-after-list {
     float: left;
     display: flex;
     flex-flow: column;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .contact-form-holder div:nth-child(1) .first-name,
@@ -584,8 +592,8 @@ p.txt-after-list {
 .contact-form-holder div:nth-child(2) .last-name,
 .contact-form-holder div:nth-child(2) .web-site {
     height: 50%;
-    background-color: yellow;
-    border: 1px solid #000;
+    /* background-color: yellow; */
+    /* border: 1px solid #000; */
     padding: 5px;
     display: flex;
     align-items: center;
@@ -598,6 +606,7 @@ p.txt-after-list {
     border-left: none;
     border-right: none;
     border-bottom: 4px solid #000;
+    font-size: 13pt;
 }
 
 .contact-section .contact-form-holder > div:nth-child(-n+2) input:focus {
@@ -607,7 +616,7 @@ p.txt-after-list {
 .contact-section .contact-form-holder div:nth-child(3) {
     height: 140px;
     width: 100%;
-    background-color: orange;
+    /* background-color: orange; */
     float: left;
 }
 
@@ -615,7 +624,7 @@ p.txt-after-list {
     height: 140px;
     width: 100%;
     float: left;
-    background-color: #fff;
+    /* background-color: #fff; */
     padding: 5px;
 }
 
@@ -626,6 +635,7 @@ p.txt-after-list {
     border-left: none;
     border-right: none;
     border-bottom: 4px solid #000;
+    font-size: 13pt;
 }
 
 .contact-section .contact-form-holder div:nth-child(4) input:focus {
@@ -658,22 +668,24 @@ p.txt-after-list {
 .newsletter-section .newsletter-title {
     text-align: center;
     margin-bottom: 45px;
+    font-size: 36pt;
 }
 
 .newsletter-section .newsletter-sub {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
+    font-size: 16pt;
 }
 
 .newsletter-section .subscribe-holder {
     width: 550px;
     height: 60px;
     margin: 0 auto 85px auto;
-    background-color: orange;
+    /* background-color: orange; */
 }
 
 .newsletter-section .subscribe-holder > div {
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     float: left;
     height: 100%;
 }
@@ -719,7 +731,7 @@ p.txt-after-list {
 .social-holder {
     width: 280px;
     height: 72px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -727,10 +739,31 @@ p.txt-after-list {
 }
 
 .social-holder > div {
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     height: 60px;
     width: 60px;
     border-radius: 50%;
+}
+
+.social-holder > div:nth-child(1) {
+    background-image: url(img/newsletter/twitter1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.social-holder > div:nth-child(2) {
+    background-image: url(img/newsletter/dribbble2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.social-holder > div:nth-child(3) {
+    background-image: url(img/newsletter/instagram3.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.social-holder > div:nth-child(4) {
+    background-image: url(img/newsletter/pinterest4.png);
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 /************EXTRAS************/
