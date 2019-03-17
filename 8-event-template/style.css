@@ -135,12 +135,12 @@ html {
 /************DESIGN-Battles************/
 
 .design-battles {
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     width: 1100px;
     margin: 0 auto;
     min-height: 200px;
     padding-top: 148px;
-    background-color: #ccc;
+    /* background-color: #ccc; */
 }
 
 .design-battles h1 {
@@ -161,7 +161,7 @@ html {
 }
 
 .list-holder {
-    background-color: orange;
+    /* background-color: orange; */
     min-height: 200px;
     margin-bottom: 86px;
     position: relative;
@@ -169,34 +169,31 @@ html {
 
 .list-holder > div {
     float: left;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     height: 200px;
     width: 50%;
-    /* padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 13px; */
 }
 
 .list-left {
-    background-color: #ffffb5;
+    /* background-color: #ffffb5; */
 }
 
 .list-right {
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 .list-left > div,
 .list-right > div {
     height: 66px;
     background-color: #fff;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 
 .list-left > div div,
 .list-right > div div {
     float: left;
     height: 100%;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 
 .signs-holder {
@@ -262,56 +259,73 @@ p.txt-after-list {
 }
 
 .submissions {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     font-weight: bold;
+    font-size: 30pt;
 }
 
-.rxr-af-subm {
-    margin-bottom: 10px;
+.txt-af-subm {
+    margin-bottom: 50px;
+    font-size: 14pt;
 }
 
 .download-btn2 {
-    height: 40px;
-    width: 400px;
-    background-color: orange;
-    line-height: 40px;
+    height: 71px;
+    width: 458px;
+    line-height: 71px;
     text-align: center;
+    font-size: 22pt;
     font-weight: bold;
     color: #fff;
     background-color: #c60ebe;
     border-radius: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 153px;
+}
+
+.download-btn2:hover {
+    background-color: #f715eb;
+    cursor: pointer;
 }
 
 /************COUNTDOWN************/
 
+.countdown-holder-bg {
+    background-image: url(img/countdown/gradient-bg.jpg);
+    background-repeat: repeat-x;
+}
+
 .countdown {
-    height: 1620px;
+    height: 1618px;
     width: 1100px;
-    border: 1px solid #000;
+    /* border: 1px solid #fff; */
     margin: 0 auto;
     padding-top: 150px;
+    /* background-color: #fddfdf; */
+    color: #fff;
 }
 
 .said-battles {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 58px;
+    font-size: 62pt;
 }
 
 .txt-af-said {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    font-size: 22pt;
+    font-weight: 100;
 }
 
 .battles-grid-holder {
     height: 730px;
     width: 1070px;
-    background-color: #ccc;
-    margin: 0 auto 100px auto;
+    /* background-color: #ccc; */
+    margin: 0 auto 115px auto;
 }
 
 .battles-grid-holder > div {
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     height: 50%;
     display: flex;
     justify-content: space-around;
@@ -321,21 +335,46 @@ p.txt-after-list {
 .battles-grid-holder div .grid-item {
     width: 290px;
     height: 355px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     padding-top: 5px;
 }
 
 .battles-grid-holder div .grid-item .item-bg {
     width: 263px;
     height: 263px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0 auto 8px auto;
+}
+
+.battles-grid-holder div:nth-child(1) .grid-item:nth-child(1) .item-bg {
+    background-image: url(img/countdown/img1.png);
+    background-repeat: no-repeat;
+}
+.battles-grid-holder div:nth-child(1) .grid-item:nth-child(2) .item-bg {
+    background-image: url(img/countdown/img2.png);
+    background-repeat: no-repeat;
+}
+.battles-grid-holder div:nth-child(1) .grid-item:nth-child(3) .item-bg {
+    background-image: url(img/countdown/img3.png);
+    background-repeat: no-repeat;
+}
+.battles-grid-holder div:nth-child(2) .grid-item:nth-child(1) .item-bg {
+    background-image: url(img/countdown/img4.png);
+    background-repeat: no-repeat;
+}
+.battles-grid-holder div:nth-child(2) .grid-item:nth-child(2) .item-bg {
+    background-image: url(img/countdown/img5.png);
+    background-repeat: no-repeat;
+}
+.battles-grid-holder div:nth-child(2) .grid-item:nth-child(3) .item-bg {
+    background-image: url(img/countdown/img6.png);
+    background-repeat: no-repeat;
 }
 
 .battles-grid-holder div .grid-item .item-sub {
     width: 280px;
     height: 70px;
-    background-color: #fff;
+    /* background-color: orange; */
     margin: 0 auto;
     padding-top: 5px;
 }
@@ -352,13 +391,14 @@ p.txt-after-list {
 .timer-title {
     text-align: center;
     margin-bottom: 65px;
+    font-size: 62px;
 }
 
 .timer-holder {
     width: 850px;
     height: 160px;
-    border: 1px solid #000;
-    margin: 0 auto 0px auto;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -367,8 +407,15 @@ p.txt-after-list {
 .timer-holder > div {
     width: 160px;
     height: 160px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     padding-top: 15px;
+}
+
+.timer-holder > div:nth-child(1) {
+    border: 1px solid #fff;
+}
+.timer-holder > div:nth-child(n+2) {
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .timer-holder .timer-time {
@@ -386,26 +433,48 @@ p.txt-after-list {
 
 .sponsorship {
     height: 430px;
-    background-color: orange;
-    padding-top: 100px;
+    /* background-color: orange; */
+    padding-top: 90px;
 }
 
 .sponsorship .sponsorship-title {
     text-align: center;
-    margin-bottom: 85px;
+    margin-bottom: 77px;
+    font-size: 52pt;
 }
 
 .sponsorship .sponsor-logo-holder {
     width: 1100px;
     height: 120px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     margin: 0 auto;
     display: flex;
 }
 
 .sponsorship .sponsor-logo-holder div {
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     flex-grow: 1;
+}
+
+.sponsorship .sponsor-logo-holder div:nth-child(1) {
+    background-image: url(img/sponsorship/clients-01.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.sponsorship .sponsor-logo-holder div:nth-child(2) {
+    background-image: url(img/sponsorship/clients-02.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.sponsorship .sponsor-logo-holder div:nth-child(3) {
+    background-image: url(img/sponsorship/clients-03.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.sponsorship .sponsor-logo-holder div:nth-child(4) {
+    background-image: url(img/sponsorship/clients-04.png);
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 /************JURY************/
@@ -419,12 +488,13 @@ p.txt-after-list {
 .jury-holder .jury-title {
     text-align: center;
     margin-bottom: 70px;
+    font-size: 60pt;
 }
 
 .jury-photos {
     width: 1150px;
     height: 450px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     margin: 0 auto;
 }
 
@@ -432,25 +502,43 @@ p.txt-after-list {
     float: left;
     width: 382px;
     height: 100%;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 
 .jury-photos .photo-holder {
     height: 360px;
     width: 360px;
-    background-color: yellow;
+    /* background-color: yellow; */
     border-radius: 50%;
     margin: 0 auto 20px auto;
+}
+
+.jury-photos div:nth-child(1) .photo-holder {
+    background-image: url(img/jury/jury1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.jury-photos div:nth-child(2) .photo-holder {
+    background-image: url(img/jury/jury2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.jury-photos div:nth-child(3) .photo-holder {
+    background-image: url(img/jury/jury3.png);
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .jury-photos .photo-sub-name {
     font-weight: bold;
     text-align: center;
     margin-bottom: 10px;
+    font-size: 18pt;
 }
 
 .jury-photos .photo-sub-job {
     text-align: center;
+    font-size: 14pt;
 }
 
 /************CONTACT-US************/
