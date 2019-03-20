@@ -306,3 +306,63 @@ body {
     height: 460px;
     background-color: #4a3949;
 }
+
+.feedback-content-holder {
+    width: 1180px;
+    height: 100%;
+    /* border: 1px solid #fff; */
+    margin: 0 auto;
+    padding-top: 80px;
+    background-image: url(img/feedback/feedback-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.feedback-img {
+    width: 114px;
+    height: 114px;
+    /* border: 1px solid #fff; */
+    margin: 0 auto 25px auto;
+    border-radius: 50%;
+    background-image: url(img/feedback/feedback-1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.text-block-feedback {
+    text-align: center;
+    color: #817680;
+    width: 745px;
+    margin: 0 auto 40px auto;
+    font-size: 18pt;
+    line-height: 40px
+}
+
+.text-block-feedback i {
+    font-size: 14pt;
+}
+
+.dots-holder {
+    width: 50px;
+    height: 12px;
+    /* border: 1px solid #fff; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dots-holder div {
+    width: 10px;
+    height: 10px;
+    background-color: #796d79;
+    border-radius: 50%;
+}
+
+.dots-holder div:hover {
+    cursor: pointer;
+}
+
+.dots-holder div:nth-child(1) {
+    background-color: #fff;
+}
