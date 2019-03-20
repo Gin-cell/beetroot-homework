@@ -77,6 +77,10 @@ body {
     font-size: 14pt;
 }
 
+.header-top-holder > div:nth-child(2) ul li a:hover {
+    color: #facfcf;
+}
+
 .nav-btn {
     float: left;
     width: 21px;
@@ -419,6 +423,13 @@ body {
     float: left;
     position: relative;
     padding-top: 60px;
+    transition: 250ms;
+}
+
+.cuisines-catalog-holder > div:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    z-index: 1;
 }
 
 .cuisines-catalog-holder > div:nth-child(1) {
