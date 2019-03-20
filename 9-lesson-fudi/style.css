@@ -366,3 +366,197 @@ body {
 .dots-holder div:nth-child(1) {
     background-color: #fff;
 }
+
+/************CUISINES************/
+
+.cuisines {
+    min-height: 790px;
+    background-color: #fff;
+    padding-top: 100px;
+}
+
+.cuisines-title {
+    font-size: 18pt;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.cuisines-title > div {
+    width: 88px;
+    height: 1px;
+    background-color: #f57365;
+    margin: 10px auto 0 auto;
+}
+
+.cuisines-catalog-holder {
+    min-height: 455px;
+    /* border: 1px solid #000;
+    background-color: #ccc; */
+    margin: 0 auto;
+    position: relative;
+    width: 1602px;
+}
+
+@media screen and (max-width: 1700px) {
+    .cuisines-catalog-holder {
+        min-height: 681px;
+        width: 1282px;
+    }
+}
+
+@media screen and (max-width: 1380px) {
+    .cuisines-catalog-holder {
+        min-height: 909px;
+        width: 962px;
+    }
+}
+
+.cuisines-catalog-holder > div {
+    /* border: 1px solid red; */
+    width: 320px;
+    height: 227px;
+    float: left;
+    position: relative;
+    padding-top: 60px;
+}
+
+.cuisines-catalog-holder > div:nth-child(1) {
+    background-image: url(img/cuisines/1-italian-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.cuisines-catalog-holder > div:nth-child(2) {
+    background-image: url(img/cuisines/2-indian-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.cuisines-catalog-holder > div:nth-child(3) {
+    background-image: url(img/cuisines/3-french-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.cuisines-catalog-holder > div:nth-child(4) {
+    background-image: url(img/cuisines/4-steakhouse-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.cuisines-catalog-holder > div:nth-child(5) {
+    background-image: url(img/cuisines/5-seafood-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.cuisines-catalog-holder > div:nth-child(6) {
+    background-image: url(img/cuisines/6-sushi-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.cuisines-catalog-holder > div:nth-child(7) {
+    background-image: url(img/cuisines/7-mexican-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.cuisines-catalog-holder > div:nth-child(8) {
+    background-image: url(img/cuisines/8-chinese-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.cuisines-catalog-holder > div:nth-child(9) {
+    background-image: url(img/cuisines/9-pizza-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.cuisines-catalog-holder > div:nth-child(10) {
+    background-image: url(img/cuisines/10-american-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.cuisines-subtitle {
+    text-align: center;
+    color: #f9f6f3;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.cuisines-title-primary {
+    text-align: center;
+    color: #fff;
+    font-size: 30pt;
+    text-transform: uppercase;
+}
+
+.statistics-holder {
+    width: 1180px;
+    height: 175px;
+    margin: 0 auto;
+    /* border: 1px solid orange; */
+}
+
+.statistics-holder > div {
+    width: 235.5px;
+    height: 100%;
+    /* border: 1px solid #000; */
+    float: left;
+    padding-top: 47px;
+}
+
+.stat-number {
+    text-align: center;
+    font-size: 36pt;
+}
+
+.numb-sub {
+    text-align: center;
+    font-size: 16pt;
+    color: #444;
+}
+
+/************FOOTER************/
+
+.footer {
+    background-color: #f7f7f7;
+    height: 90px;
+}
+
+.footer-content-holder {
+    width: 1180px;
+    height: 100%;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+    color: #8b8b8b;
+    font-size: 14pt;
+}
+
+.footer-left {
+    width: 300px;
+    height: 100%;
+    /* background-color: orange; */
+    float: left;
+    line-height: 90px;
+}
+.footer-right {
+    width: 310px;
+    height: 100%;
+    /* background-color: orange; */
+    float: right;
+    text-align: right;
+    line-height: 90px;
+    text-transform: uppercase;
+}
+
+.footer-right b {
+    color: #000;
+}
