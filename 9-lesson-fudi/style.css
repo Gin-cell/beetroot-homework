@@ -29,7 +29,8 @@ body {
 }
 
 .header-content-holder {
-    width: 1180px;
+    /* width: 1180px; */
+    max-width: 1180px;
     height: 100%;
     /* background-color: #00ffea; */
     margin: 0 auto;
@@ -164,7 +165,8 @@ body {
 }
 
 .summary-content-holder {
-    width: 1180px;
+    /* width: 1180px; */
+    max-width: 1180px;
     height: 100%;
     /* background-color: green; */
     margin: 0 auto;
@@ -235,7 +237,8 @@ body {
 }
 
 .app-content-holder {
-    width: 1180px;
+    /* width: 1180px; */
+    max-width: 1180px;
     height: 100%;
     /* border: 1px solid #fff; */
     margin: 0 auto;
@@ -312,7 +315,8 @@ body {
 }
 
 .feedback-content-holder {
-    width: 1180px;
+    /* width: 1180px; */
+    max-width: 1180px;
     height: 100%;
     /* border: 1px solid #fff; */
     margin: 0 auto;
@@ -412,10 +416,6 @@ body {
 .feedback-two,
 .feedback-three {
     display: none;
-}
-
-.dotColor {
-    background-color: #fff;
 }
 
 .active {
@@ -593,7 +593,8 @@ body {
 }
 
 .statistics-holder {
-    width: 1180px;
+    /* width: 1180px; */
+    max-width: 1180px;
     height: 175px;
     margin: 0 auto;
     /* border: 1px solid orange; */
@@ -626,7 +627,8 @@ body {
 }
 
 .footer-content-holder {
-    width: 1180px;
+    /* width: 1180px; */
+    max-width: 1180px;
     height: 100%;
     /* border: 1px solid #000; */
     margin: 0 auto;
@@ -642,7 +644,7 @@ body {
     line-height: 90px;
 }
 .footer-right {
-    width: 310px;
+    width: 370px;
     height: 100%;
     /* background-color: orange; */
     float: right;
