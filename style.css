@@ -140,6 +140,7 @@ footer {
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 20px;
+    border: 8px solid #fff;
     opacity: 0;
     /* display: none; */
     z-index: 10;
