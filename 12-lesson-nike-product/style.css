@@ -87,7 +87,7 @@
     width: 100%;
     z-index: 1;
     transition: all 1000ms;
-    /* transform: translateX(-100%); */
+    transform: translateX(-100%);
     background-image: url(img/dark/dark-bg.png);
     background-repeat: no-repeat;
     background-position: center; 
