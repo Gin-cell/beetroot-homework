@@ -179,13 +179,14 @@
     height: 100%;
     width: 241px;
     /* border: 1px solid #fff; */
-    padding-top: 70px;
+    padding-top: 50px;
 }
 
 .dark_title {
     color: #e1e1e1;
     font-size: 24pt;
     margin-bottom: 10px;
+    font-weight: 100;
 }
 
 .dark_subtitle {
@@ -226,6 +227,10 @@
     color: #fff;
 }
 
+.measurements {
+    margin-bottom: 30px;
+}
+
 .measurements select {
     width: 70px;
     height: 30px;
@@ -243,11 +248,23 @@
     outline: none;
 }
 
+.dark_addCardBtn {
+    width: 184px;
+    height: 40px;
+    border: 2px solid #4f5560;  
+    background-color: #202835;
+}
 
+.dark_addCardBtn p {
+    color: #80848b;
+    text-align: center;
+    line-height: 37px;
+}
 
-
-
-
+.dark_addCardBtn:hover {
+    cursor: pointer;
+    background-color: #2f3b4e;
+}
 
 /************RIGHT-SLIDE************/
 
