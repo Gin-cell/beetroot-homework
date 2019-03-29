@@ -8,7 +8,7 @@ body {
     
 }
 
-/************general************/
+/************BG************/
 
 .bg {
     background: 
@@ -17,6 +17,8 @@ body {
     height: 100vh;
     animation: animateGradient 10s linear infinite;
 }
+
+/************HEADER************/
 
 .header {
     padding-top: 50px;
@@ -38,6 +40,8 @@ p {
     font-size: 20pt;
     color: #fff;
 }
+
+/************WRAPPER************/
 
 .wrapper {
     width: 940px;
@@ -79,6 +83,8 @@ p {
     background-size: contain;
 }
 
+/************LEFT-SLIDE************/
+
 .dark {
     position: fixed;
     height: 100vh;
@@ -91,6 +97,10 @@ p {
     background-position: center; 
     background-size: cover; 
 }
+
+
+
+/************RIGHT-SLIDE************/
 
 .white {
     position: fixed;
@@ -105,9 +115,7 @@ p {
     background-size: cover; 
 }
 
-.show {
-    transform: translateX(0%);
-}
+/************SLIDES-GENERAL************/
 
 .close-btn {
     width: 39px;
@@ -150,6 +158,12 @@ p {
     transform: rotate(-45deg);
     top: 0;
 }
+
+.show {
+    transform: translateX(0%);
+}
+
+/************ANIMATIONS************/
 
 @keyframes animateGradient {
     0% {
