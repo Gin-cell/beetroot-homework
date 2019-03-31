@@ -11,7 +11,40 @@
 <body>
     
     <div class="wrapper">
-        <div class="form_holder"></div>
+        <div class="form_holder">
+            <div class="form_total">
+                <b>Harold Finch</b>
+                <p>Your Total</p>
+                <b class="price">$88</b>
+            </div>
+            <div class="form_content">
+                <p class="input_title">Credit card number</p>
+                <input type="text" placeholder="Credit card number" maxlength="12">
+                <p class="input_title">Expiration date</p>
+                <div class="options_holder">
+                    <select class="month">
+                        <option value="Month">Month</option>
+                        <option value="Month">Month</option>
+                        <option value="Month">Month</option>
+                        <option value="Month">Month</option>
+                        <option value="Month">Month</option>
+                        <option value="Month">Month</option>
+                        <option value="Month">Month</option>
+                    </select>
+                    <select class="year">
+                        <option value="year">Year</option>
+                    </select>
+                </div>
+                <p class="input_title">CVV</p>
+                <input type="text" class="cvv" maxlength="4">
+                <p class="cvv_desctiption">
+                    3 or 4 digits - <span>view example</span>
+                </p>
+                <div class="line"></div>
+                <div class="pay_btn">Pay</div>
+                <p class="cancel_order">Cancel order</p>
+            </div>
+        </div>
     </div>
 
     <script src="j.js"></script>
