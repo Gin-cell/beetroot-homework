@@ -6,3 +6,74 @@
 
 /************GENERAL************/
 
+#wrapper {
+    min-height: 100vh;
+    position: relative;
+}
+
+.conetnet_holder {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.class_work {
+    height: 550px;
+    background-color: #ccc;
+    position: relative;
+    overflow: hidden;
+    background-image: url(img/class-work.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.class_work:before {
+    content: '';
+    width: 1100px;
+    height: 150px;
+    background-color: #fff;
+    position: absolute;
+    top: 550px;
+    left: -100px;
+    transform-origin: top right;
+    transform: rotate(5deg);
+}
+
+.payment {
+    height: 550px;
+    background-color: #ccc;
+    position: relative;
+    overflow: hidden;
+    transform: rotate(180deg);
+}
+.payment_bg {
+    height: 100%;
+    background-image: url(img/payment.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transform: rotate(-180deg);
+}
+.payment:before {
+    content: '';
+    width: 1100px;
+    height: 150px;
+    background-color: #fff;
+    position: absolute;
+    top: 550px;
+    left: -100px;
+    transform-origin: top right;
+    transform: rotate(5deg);
+    z-index: 1;
+}
+.payment:after {
+    content: '';
+    width: 1100px;
+    height: 150px;
+    background-color: #fff;
+    position: absolute;
+    top: 0px;
+    left: -50px;
+    transform-origin: top left;
+    transform: rotate(-5deg);
+    z-index: 1;
+}
