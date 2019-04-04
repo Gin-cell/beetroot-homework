@@ -66,6 +66,8 @@ body {
     font-size: 15pt;
     text-transform: uppercase;
     color: #fff;
+    line-height: 30px;
+    font-weight: bold;
 }
 
 /************DIV-2************/
@@ -80,13 +82,11 @@ body {
 
 .title_holder_secondary {
     border: 1px solid #fff;
-    margin-top: 300px;
+    margin-top: 280px;
 }
 
 
 /************TITLES************/
-
-
 
 .card_date {
     text-transform: uppercase;
@@ -96,8 +96,18 @@ body {
 }
 
 .card_title {
-    font-size: 17pt;
+    font-size: 16pt;
     text-transform: uppercase;
     color: #000;
     line-height: 30px;
+    font-weight: bold;
+}
+
+.icon {
+    width: 54px;
+    height: 54px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 25px;
 }
