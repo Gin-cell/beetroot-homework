@@ -86,6 +86,21 @@ header .title-homework {
     font-size: 14pt;
 }
 
+.modules {
+    border-radius: 10px;
+    background-color: #fff;
+    color: #66b394 !important;
+}
+
+.modules:hover {
+    cursor: default;
+}
+
+.exams {
+    border-radius: 10px;
+    background-color: #ba2455;
+}
+
 footer {
     height: 30px;
     background-color: #66b394;
@@ -115,9 +130,8 @@ footer {
 /***************POPUP-SOCIAL***************/
 
 #button {
-    background-color: rgb(186, 36, 85);
+    background-color: rgb(36, 113, 186);
     border-radius: 10px;
-    
 }
 
 .blure-bg {
