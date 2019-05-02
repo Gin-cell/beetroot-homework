@@ -626,30 +626,147 @@ body {
 /**********contact**********/
 
 .contact {
-    height: 1000px;
+    height: 900px;
     background-image: url(img/contact/contact-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding-top: 90px;
 }
 
-.cleaning {
-    height: 600px;
-    background-image: url(img/contact/cleaning.png);
-    background-position: center top;
-    background-repeat: no-repeat;
+.contact_title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 90px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 45px;
+    color: #262626;
 }
 
-.message {
+.contact_subtitle {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #262626;
+    margin-bottom: 45px;
+}
+
+.content_holder_secondary {
+    /* border: 1px solid #fff; */
+    min-height: 300px;
+    /* background-color: #ccc; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_holder_secondary > div {
+    width: 500px;
+    /* border: 1px solid #000; */
+    min-height: 300px;
+}
+
+.contact_input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 196, 196, 0.5);
+    padding-left: 20px;
+    font-size: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+}
+
+.contact_input::placeholder {
+    font-weight: 300;
+    color: #fff;
+}
+
+.contact_input:focus {
+    background-color: #00c4c4;
+}
+
+.content_message {
+    width: 100%;
+    min-height: 250px;
+    background-color: rgba(0, 196, 196, 0.5);
+    outline: none;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+}
+
+.content_message::placeholder {
+    color: #fff;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
-    font-size: 40px;
-    text-align: center;
-    color: #000;
 }
 
+.content_message:focus {
+    background-color: #00c4c4;
+}
+
+.contact_info--title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.contact_info {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    margin-bottom: 18px;
+}
 
 /**********footer**********/
+
+.footer {
+    height: 90px;
+    background-color: #262626;
+}
+
+.footer_content {
+    /* border: 1px solid #fff; */
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy_right {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #b9b9b9;
+}
+
+.footer_logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    text-align: center;
+    color: #b9b9b9;
+}
+
+.footer_author {
+    color: #b9b9b9;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.footer_author span {
+    color: red;
+}
 
 
 
