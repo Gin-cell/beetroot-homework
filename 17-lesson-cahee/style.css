@@ -16,7 +16,7 @@ body {
 .content_holder {
     width: 1170px;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 /**********header**********/
@@ -404,7 +404,7 @@ body {
 
 .gallery_item {
     /* box-shadow: 1px 3px 4px -2px #333; */
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 
 .gallery_item:nth-child(1) {
