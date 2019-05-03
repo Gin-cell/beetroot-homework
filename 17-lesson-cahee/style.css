@@ -16,7 +16,7 @@ body {
 .content_holder {
     width: 1170px;
     margin: 0 auto;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 /**********header**********/
@@ -45,6 +45,66 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 50px;
+}
+
+.btn_nav {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* border: 1px solid #000; */
+    position: fixed;
+    top: 40px;
+    right: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px -2px #000;
+    transition: 300ms;
+    z-index: 2;
+    display: none;
+}
+
+.btn_nav:hover {
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.btn_line {
+    height: 3px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    transition: 300ms;
+}
+.line_one {
+    top: 50%;
+    left: 50%;
+    transform: 
+        translate(-50%, -50%)
+        rotate(90deg);
+}
+.line_two {
+    top: 50%;
+    left: 50%;
+    transform: 
+        translate(-50%, -50%)
+        rotate(0deg);
+}
+
+.line_one.active {
+    top: 50%;
+    left: 50%;
+    transform: 
+        translate(-50%, -50%)
+        rotate(45deg);
+}
+.line_two.active {
+    top: 50%;
+    left: 50%;
+    transform: 
+        translate(-50%, -50%)
+        rotate(-45deg);
 }
 
 .nav_nav {
@@ -343,7 +403,8 @@ body {
 }
 
 .gallery_item {
-    box-shadow: 1px 3px 4px -2px #333;
+    /* box-shadow: 1px 3px 4px -2px #333; */
+    border: 1px solid #000;
 }
 
 .gallery_item:nth-child(1) {
@@ -524,6 +585,7 @@ body {
 
 .cards_item {
     width: 370px;
+    height: 310px;
     /* border: 1px solid #fff; */
     position: relative;
     box-shadow: 0 2px 5px -1px #222;
@@ -719,13 +781,15 @@ body {
     font-weight: bold;
     font-size: 17px;
     text-transform: uppercase;
+    text-align: left;
 }
 
-.contact_info {
+.contact_info--text {
     font-family: 'Raleway', sans-serif;
     font-weight: normal;
     font-size: 17px;
     margin-bottom: 18px;
+    text-align: left;
 }
 
 /**********footer**********/
