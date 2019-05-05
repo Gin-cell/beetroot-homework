@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Text-Editor</title>
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../normalize.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+</head>
+<body>
+
+    <input type="button" class="redir8"'>
+    
+    <div class="controls">
+        <div class="title">
+            <span>Title</span>
+            <input type="text" class="title-edit" placeholder="Like Tears In Ra...">
+
+        </div>
+        <div class="styling">
+            <div class="redirectors">
+                <input type="button" id="redir1" onclick="add_tags('bold')">
+                <input type="button" class="redir2" onclick='add_tags("italic");'>
+                <input type="button" class="redir4" onclick='add_tags("underline");'>
+                <input type="button" class="redir3" onclick='add_tags("justifyFull");'>
+                <input type="button" class="redir5" onclick='add_tags("justifyLeft");'>
+                <input type="button" class="redir6" onclick='add_tags("justifyCenter");'>
+                <input type="button" class="redir7" onclick='add_tags("justifyRight");'>
+            </div>
+
+            <i class="fa fa-bold custom"></i>
+            <i class="fa fa-italic custom"></i>	
+            <i class="fa fa-underline custom"></i>	
+            <i class="fa fa-align-justify custom"></i>
+            <i class="fa fa-align-left custom"></i>	
+            <i class="fa fa-align-center custom"></i>	
+            <i class="fa fa-align-right custom"></i>	
+        </div>
+
+    </div>
+    <div id="main">
+        <div class="container_contenteditable" contenteditable="true">
+            <div class="text-container">
+                <span class="author">Roy Batty, 2019</span>
+                <h1 class="title-article">Like Tears in Rain</h1>
+                <span class="subtitle">Where am I going? How long have I got?</span>
+                <p>I've seen things you people wouldn't believe. Attack ships on fire off the shoulder of Orion. I watched C-beams glitter in the dark near the Tannhauser gate. All Those moments will be lost in time... Like tears in rain... <i>Time to die.</i></p>
+                <p>I don't know why he saved my life. Maybe in those last moments he loved life more than he ever had before. Not just his life - anybody's life; my life. All he'd wanted were the same answers...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="j.js"></script>
+</body>
+</html>

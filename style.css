@@ -1,0 +1,300 @@
+@font-face {
+    font-family: "Comic";
+    src: url(fonts/ComicSansMS3.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#site-holder {
+    width: 100%;
+    min-height: 100vh;
+    opacity: 0;
+    animation: zoomIn 1100ms forwards;
+    animation-delay: 500ms;
+}
+
+header {
+    height: 220px;
+    background-color: #66b394;
+    box-shadow: 0px 0px 10px 0px #000;
+    position: relative;
+}
+
+header .header-logo {
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -65%);
+    background-image: url(img/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+}
+
+header .title-homework {
+    position: absolute;
+    left: 50%;
+    top: 77%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.8);;
+    font-size: 24pt;
+    /* font-family: "Comic Sans MS"; */
+    font-family: "Comic";
+}
+
+.content {
+    padding: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.homework-list {
+    max-width: 500px;
+    margin: 10px auto 0 auto;
+    display: grid;
+    grid-row-gap: 10px;
+    margin-bottom: 30px;
+}
+
+.homework-list > div {
+    height: 50px;
+    background-color: #66b394;
+    border-radius: 10px;
+    box-shadow: 0 0 8px -1px #000;
+}
+
+.homework-list > div:hover {
+    background-color: #9dceba;
+    cursor: pointer;
+}
+
+.homework-list > div a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+.modules {
+    border-radius: 10px;
+    background-color: #fff;
+    color: #66b394 !important;
+}
+
+.modules:hover {
+    cursor: default;
+}
+
+.exams {
+    border-radius: 10px;
+    background-color: #ba2455;
+}
+
+footer {
+    height: 30px;
+    background-color: #66b394;
+    margin-top: -30px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    opacity: 0;
+    animation: zoomIn 1100ms forwards;
+    animation-delay: 500ms;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+
+/***************POPUP-SOCIAL***************/
+
+#button {
+    background-color: rgb(36, 113, 186);
+    border-radius: 10px;
+}
+
+.blure-bg {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    animation: showBlure 500ms forwards;
+    display: none;
+    position: fixed;
+    z-index: 1;
+}
+
+.main {
+    width: 380px;
+    height: 200px;
+    background-color: #66b394;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    border: 8px solid #fff;
+    opacity: 0;
+    /* display: none; */
+    z-index: 10;
+    animation: showMain 500ms forwards;
+    animation-delay: 500ms;
+    box-shadow: 0 0 15px -2px #000;
+}
+
+.social-first {
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-first div {
+    width: 70px;
+    height: 70px;
+    /* background-color: #fff; */
+    border-radius: 50%;
+}
+
+.social-first .fecebook {
+    background-image: url(social-icons/facebook.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0 0 4px 1px #000;
+}
+.social-first .github {
+    background-color: #fff;
+    background-image: url(social-icons/github.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0 0 4px 1px #000;
+}
+.social-first .instagram {
+    background-image: url(social-icons/instagram.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0 0 4px 1px #000;
+}
+
+.social-second {
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-second div {
+    width: 300px;
+    background-color: #000;
+    height: 80px;
+    background-image: url(social-icons/codepen.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0 0 4px 1px #000;
+}
+
+
+.left {
+    width: 190px;
+    height: 200px;
+    background-color: #66b394;
+    border-radius: 20px 0px 0 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-100%, -50%);
+    animation: showLeft 500ms ease-in forwards;
+    /* display: none; */
+    
+}
+.right {
+    width: 190px;
+    height: 200px;
+    background-color: #66b394;
+    border-radius: 0px 20px 20px 0px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    animation: showRight 500ms ease-in forwards;
+    /* display: none; */
+}
+
+.blure-bg.active {
+    display: block;
+}
+
+/* .left.active {
+    display: block;
+}
+.right.active {
+    display: block;
+}
+
+.main.active {
+    display: block;
+} */
+
+@keyframes showBlure {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+@keyframes showLeft {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: 50%;
+    }
+}
+@keyframes showRight {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 50%;
+    }
+}
+@keyframes showMain {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

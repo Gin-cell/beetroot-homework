@@ -1,0 +1,213 @@
+@font-face {
+    font-family: "Custom Font";
+    src: url(fonts/Proxima\ Nova\ Bold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Custom Font"; */
+}
+
+#video-bg {
+    position: fixed;
+    min-height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#main {
+    margin: 60px auto 0 auto;
+    position: relative;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    width: 750px;
+    min-height: 710px;
+    box-shadow: 0 0 8px 0px #fff;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.header div,
+.work div,
+.education div,
+.skills div {
+    /* border: 1px solid #000; */
+    height: 100%;
+}
+
+.work div:nth-child(1),
+.education div:nth-child(1),
+.skills div:nth-child(1) {
+    padding: 5px;
+}
+
+.section-title {
+    height: auto !important;
+    display: block;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/**************header**************/
+
+.header {
+    height: 200px;
+    /* background: #fff; */
+    display: grid;
+    grid-template-columns: 25% 1fr;
+}
+
+.header div:nth-child(1) {
+    position: relative;
+}
+
+.header div:nth-child(2) {
+    display: flex;
+    flex-flow: column;
+}
+.header div:nth-child(2) div {
+    width: 100%;
+}
+.header div:nth-child(2) .name {
+    height: 130px;
+    border-bottom: 2px solid #000;
+}
+.header div:nth-child(2) .contacts {
+    height: 100%;
+}
+
+.photo {
+    width: 150px;
+    height: 170px !important;
+    /* background-color: #ccc; */
+    background-image: url(img/photo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.name h1 {
+    margin-top: 10px;
+}
+
+.contacts {
+    padding-top: 10px;
+    display: grid !important;
+    grid-template-columns: 20% 1fr;
+}
+
+.contacts a {
+    color: #000;
+    text-decoration: none;
+}
+
+.contacts div:nth-child(2) {
+    text-align: right;
+    padding-right: 5px;
+}
+
+/**************work**************/
+
+.work {
+    min-height: 230px;
+    /* background-color: orange; */
+    display: grid;
+    grid-template-columns: 20% 1fr;
+}
+
+.work a {
+    color: #000;
+}
+
+.work > div:nth-child(2) {
+    display: flex;
+    flex-flow: column;
+}
+
+.work > div:nth-child(2) div {
+    width: 100%;
+    /* border: 1px solid #fff; */
+    padding: 5px;
+}
+
+.zoom,
+.school,
+.skysoft {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.zoom div:nth-child(2),
+.school div:nth-child(2),
+.skysoft div:nth-child(2) {
+    text-align: right;
+}
+
+
+
+/**************education**************/
+
+.education {
+    min-height: 50px;
+    /* background-color: yellow; */
+    display: grid;
+    grid-template-columns: 20% 1fr;
+}
+
+.education div:nth-child(2) {
+    padding: 5px 5px 5px 9px;
+    position: relative;
+    display: flex;
+}
+
+.education div:nth-child(2) div {
+    /* background-color: #fff; */
+    /* border: 1px solid #000; */
+    flex-grow: 1;
+}
+
+.education div:nth-child(2) div.ed-name {
+    width: 470px;
+}
+
+.education div:nth-child(2) div.ed-year span {
+    display: block;
+    width: 100%;
+    text-align: right;  
+}
+
+/* .education div:nth-child(2) span {
+    text-align: right;
+    width: 80px;
+    position: absolute;
+    left: 100%;
+    transform: translateX(-85px);
+} */
+
+/**************skills**************/
+
+.skills {
+    height: 270px;
+    /* background-color: rgb(92, 92, 175); */
+    display: grid;
+    grid-template-columns: 20% 1fr;
+}
+
+.skills div:nth-child(2) {
+    padding: 5px;
+}
+.skills div:nth-child(2) ul {
+    margin-left: 19px;
+}
+
