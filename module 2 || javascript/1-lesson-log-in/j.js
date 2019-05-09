@@ -1,4 +1,4 @@
-//**********SOLUTION
+//**********LOG-IN
 var userName;
 var password;
 
@@ -19,3 +19,27 @@ function logIn () {
     }
 }
 
+//**********toUpperCase
+var userStr = '';
+const capitalize = (x) => {
+    userStr = prompt('Enter a word without capital letters in it');
+    let capitalized = userStr.charAt(0).toUpperCase() + userStr.slice(1);
+    alert(capitalized);
+}
+
+//**********outputSmallerNumber
+
+var userNum1;
+var userNum2;
+
+const min = (a, b) => {
+    a = prompt('Enter the first number');
+    b = prompt('Enter the second number');
+    if (a < b) {
+        alert(`${a} is smaller than ${b}`);
+    } else if (a == b) {
+        alert(`${a} and ${b} are equal`);
+    } else if (a > b) {
+        alert(`${b} is smaller than ${a}`);
+    }
+}

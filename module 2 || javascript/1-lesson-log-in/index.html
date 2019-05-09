@@ -4,19 +4,48 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-    <title>Log-in</title>
+    <title>Lesson 1</title>
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
 </head>
 <body>
 
-    <h1 class="title">JS - log in</h1>
-    <p class="conditions">
-        Напишите код, который будет спрашивать логин (prompt).<br><br>
-        Если посетитель вводит «Админ», то спрашивать пароль, если нажал отмена (escape) – выводить «Вход отменён», если вводит что-то другое – «Я вас не знаю».<br><br>
-        Пароль проверять так. Если введён пароль «Чёрный Властелин», то выводить «Добро пожаловать!», иначе – «Пароль неверен», при отмене – «Вход отменён».
-    </p>
+    <div class="block_holder">
+        <div class="block">
+            <h1 class="title">JS - log in</h1>
+            <p class="conditions">
+                Напишите код, который будет спрашивать логин (prompt).<br><br>
+                Если посетитель вводит «Админ», то спрашивать пароль, если нажал отмена (escape) – выводить «Вход отменён», если вводит что-то другое – «Я вас не знаю».<br><br>
+                Пароль проверять так. Если введён пароль «Чёрный Властелин», то выводить «Добро пожаловать!», иначе – «Пароль неверен», при отмене – «Вход отменён».
+            </p>
+            <div class="btn" onclick="logIn()">Log in</div>
+        </div>
+        <div class="block">
+            <h1 class="title">toUpperCase() - first letter of a string</h1>
+            <p class="conditions">
+                Напишите функцию ucFirst(str), которая возвращает строку str с заглавным первым символом, например:<br><br>
+                ucFirst("вася") == "Вася";<br><br>
+                ucFirst("") == ""; // нет ошибок при пустой строке<br><br>
+                P.S. В JavaScript нет встроенного метода для этого. <br>Создайте функцию, используя toUpperCase() и charAt().
+            </p>
+            <div class="btn" onclick="capitalize()">toUpperCase()</div>
+        </div>
+        <div class="block">
+            <h1 class="title">Output the smallest number</h1>
+            <p class="conditions">
+                Напишите функцию min(a,b), которая возвращает меньшее из чисел a,b.<br><br>
+                Пример вызовов:<br><br>
+                min(2, 5) == 2<br><br>
+                min(3, -1) == -1<br><br>
+                min(1, 1) == <br>
+            </p>
+            <div class="btn" onclick="min()">min()</div>
+        </div>
 
-    <div class="login" onclick="logIn()">Log in</div>
+    </div>
+
+    
+
+    
 
     <script src="j.js"></script>
 </body>

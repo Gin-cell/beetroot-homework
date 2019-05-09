@@ -8,22 +8,34 @@ body {
   padding-top: 10px;
 }
 
+.block_holder {
+  display: grid;
+  width: 100%;
+  /* border: 1px solid red; */
+  padding: 10px;
+}
+
+.block {
+  /* border: 1px solid #000; */
+  padding: 10px;
+}
+
 .title {
   text-align: center;
   margin-bottom: 35px;
 }
 
 .conditions {
-  width: 500px;
+  max-width: 500px;
   min-height: 200px;
   /* border: 1px solid #000; */
-  margin: 0 auto 70px;
+  margin: 0 auto 40px;
   border-radius: 15px;
   box-shadow: 0 8px 30px -15px #000;
   padding: 10px;
 }
 
-.login {
+.btn {
   width: 200px;
   height: 70px;
   /* border: 1px solid black; */
@@ -39,7 +51,7 @@ body {
   box-shadow: 0 8px 30px -15px #000;
 }
 
-.login:hover {
+.btn:hover {
   background-color: orange;
   box-shadow: none;
 }
