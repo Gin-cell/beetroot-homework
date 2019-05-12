@@ -1,0 +1,30 @@
+What are the two methods of forms transfer?
+Get and receive;
+Get and post; +
+Post and receive;
+post and take.
+
+How can you clear a floated element?
+clear: both; +
+Press the delete key;
+Del tag;
+Stike tag.
+
+Which of the following is described as a collection of images put in a single image?
+Float;
+Align;
+Sprite; +
+Image.
+
+A collection of data containing both properties and methods is called...
+Tag;
+Selector;
+Object; +
+Class.
+
+In JavaScript, 'this' refers to the object that ____ the object.
+Receives;
+Depends;
+Owns; +
+Direct.
+
