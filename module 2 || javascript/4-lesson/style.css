@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 10px;
+}
+
+.block_holder {
+  display: grid;
+  width: 100%;
+  /* border: 1px solid red; */
+  padding: 10px;
+}
+
+.block {
+  /* border: 1px solid #000; */
+  padding: 10px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.conditions {
+  max-width: 500px;
+  min-height: 50px;
+  /* border: 1px solid #000; */
+  margin: 0 auto 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px -15px #000;
+  padding: 10px;
+}
+
+/*******************************/
+
+.todo_holder {
+  width: 700px;
+  min-height: 100px;
+  box-shadow: 0 8px 30px -15px #000;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.header {
+  height: 60px;
+  background-color: orange;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.header_content {
+  width: 90%;
+  /* border: 1px solid #fff; */
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_content span {
+  color: #fff;
+  margin-right: 10px; 
+}
+
+#userInp {
+  width: 300px;
+  height: 25px;
+  border: none;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin-right: 10px;
+  outline: none;
+}
+
+#addBtn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 30px;
+  text-align: center;
+  line-height: 27px;
+  transition: 200ms;
+}
+
+#addBtn:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: orange;
+  box-shadow: 0 0 10px -5px #000;
+}
+
+/*******************************/
+
+.todo_items ul {
+  list-style: none;
+}
+
+.todo_items ul li {
+  background-color: #ccc;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+  color: #000;
+  background-color: #fcd286;
+  position: relative;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.todo_items ul li input[type="checkbox"]:checked ~ span {
+  text-decoration: line-through;
+}
+
+.btns_holder {
+  /* border: 1px solid #000; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  position: absolute;
+  right: 5px;
+}
+
+.edit,
+.remove {
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+  line-height: 25px;
+  font-size: 12px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+.edit {
+  margin-right: 5px;
+}
+
+.remove > div {
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.remove > div:nth-child(1) {
+  top: 50%;
+  left: 50%;
+  transform: 
+    translate(-50%, -50%)
+    rotate(-45deg);
+}
+.remove > div:nth-child(2) {
+  top: 50%;
+  left: 50%;
+  transform: 
+    translate(-50%, -50%)
+    rotate(45deg);
+}
+
+.done {
+  background-color: #ccc !important;
+}
+
+.title_completed {
+  text-align: center;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <title>Lesson 4 || TO DO</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+</head>
+<body>
+
+    <div class="block_holder">
+        <div class="block">
+            <h1 class="title">JavaScript Events</h1>
+            <p class="conditions">
+                    Создать рабочий TODO список. <br><br>
+                    При клике на “Add” пункт добавляется в секцию TODO, при нажатии на чекбокс, пункт перемещается в поле “Completed”. <br><br> Edit/Delete редактирует и удаляет пункт.                 
+            </p> 
+            <div class="todo_holder">
+                <div class="header">
+                    <div class="header_content">
+                        <span>Add a new task</span>
+                        <input type="text" id="userInp" placeholder="What else needs to be done?">
+                        <div id="addBtn">+</div>
+                    </div>
+                </div>
+                <div class="todo_items">
+                    <h4 class="title_completed">Next to do</h4>
+                    <ul class="not_finished">
+                        <li class="item">
+                            <label class="item_body">
+                                <input type="checkbox" class="check_box" onchange="func()">
+                                <span class="item_text">item 1</span>
+                            </label>
+                            <div class="btns_holder" >
+                                <div class="edit">Edit</div>
+                                 <div class="remove" onclick="this.parentElement.parentElement.style.display = 'none';">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <h4 class="title_completed">Copleted tasks</h4>
+                    <ul class="finished">
+                        <li class="item done">
+                            <label>
+                                <input type="checkbox">
+                                <span>item 2</span>
+                            </label>
+                            <div class="btns_holder">
+                                <div class="edit">Edit</div>
+                                 <div class="remove" onclick="this.parentElement.parentElement.style.display = 'none';">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="j.js"></script>
+</body>
+</html>
