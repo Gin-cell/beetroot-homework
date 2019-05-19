@@ -1,4 +1,10 @@
 var listItem = document.querySelector('.list');
+var searchInp = document.querySelector('#search');
+var authorInp = document.querySelector('#author');
+var songInp = document.querySelector('#song');
+var search_btn = document.querySelector('#search_btn');
+var add = document.querySelector('#add');
+
 var playlist = [
     {
         author: "LED ZEPPELIN",
@@ -34,36 +40,24 @@ var playlist = [
     }
 ];
 
-//************output entire array */
-/*
-playlist.forEach(x => {
-    listItem.innerHTML += `<li>${x.author}, ${x.song};</li>`;
-});
-*/
-
-//************output on prompt */
-
-var search = prompt('What are you looking for?');
-
-function myFunc (x) {
-    for(let i = 0; i < playlist.length; i++) {
-        if(playlist[i].author.indexOf(x) != -1 || playlist[i].song.indexOf(x) != -1) {
-            listItem.innerHTML = `${playlist[i].author}, ${playlist[i].song}`;
+//--------search
+search_btn.addEventListener('click', () => {
+    playlist.forEach(x => {
+        if (x.author.indexOf(searchInp.value.toUpperCase()) != -1 || x.song.indexOf(searchInp.value.toUpperCase()) != -1) {
+            listItem.innerHTML = `<li>${x.author}, ${x.song}</li>`;
         }
-    }
-}
-
-myFunc(search);
-
-
-/*******output on input  */
-/*
-inp.addEventListener('input', () => {
-    let search = inp.value;
-    for(let i = 0; i < playlist.length; i++) {
-        if(playlist[i].author.indexOf(search) != -1 || playlist[i].song.indexOf(search) != -1) {
-            listItem.innerHTML = `${playlist[i].author}, ${playlist[i].song}`;
-        }
-    }
+    })
+    searchInp.value = '';
 })
-*/
+
+//--------update playlist array with a new value
+add.addEventListener('click', () => {
+    let arrayItem = {
+        author: authorInp.value.toUpperCase(),
+        song: songInp.value.toUpperCase()
+    }
+    playlist.push(arrayItem);
+    authorInp.value = '';
+    songInp.value = '';
+})
+
