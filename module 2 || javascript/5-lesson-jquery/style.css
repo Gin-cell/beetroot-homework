@@ -85,6 +85,13 @@ h1 {
   background-size: 210%;
 }
 
+.game_ui {
+  background-image: url(img/game_ui.png);
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+  background-size: 200%;
+}
+
 @-webkit-keyframes showTitle {
   from {
     opacity: 0;
