@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +13,7 @@ body {
 h1 {
   text-align: center;
   margin-bottom: 55px;
-  color: #ffe9c1;
+  color: #13e28d;
   text-shadow: 0 0 2px #000;
 }
 
@@ -49,7 +50,19 @@ h1 {
   height: 100%;
   line-height: 115px;
   text-align: center;
+  position: relative;
   color: #999;
+  text-transform: uppercase;
+  padding-top: 15px;
+  font-size: 16px;
+}
+
+.ui_head .head_item i {
+  position: absolute;
+  left: 50%;
+  top: 35px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .ui_head .head_item:hover {
@@ -70,14 +83,10 @@ h1 {
 }
 
 .content_holder > div {
-  border: 1px solid red;
   height: 100%;
   width: 100%;
   position: absolute;
-  font-size: 50px;
   color: #fff;
-  text-align: center;
-  line-height: 426px;
 }
 
 .content_2,
@@ -85,8 +94,198 @@ h1 {
   display: none;
 }
 
+.content_1,
+.content_2,
+.content_3 {
+  position: relative;
+}
+
+.content_left {
+  width: 175px;
+  height: 100%;
+  position: absolute;
+  left: 17px;
+  padding-top: 60px;
+}
+
+.content_left .cover {
+  background-image: url(img/cover.png);
+  background-size: 115%;
+  background-position: -7px -6px;
+  background-repeat: no-repeat;
+  height: 260px;
+  margin-bottom: 20px;
+}
+
+.content_left .stars {
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: orange;
+}
+
+.content_left .stars .star_item {
+  width: 25px;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.content_left .stars .star_item:nth-child(5) {
+  color: #fff;
+}
+
+.content_left .stars > .star_item:hover ~ .star_item {
+  color: #fff;
+}
+
+.content_right {
+  padding-top: 60px;
+  width: 335px;
+  height: 100%;
+  position: absolute;
+  right: 38px;
+  padding-top: 60px;
+  font-family: "Lato", sans-serif;
+}
+
+.content_right .title {
+  font-weight: regular;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.content_right .subtitle {
+  margin-bottom: 40px;
+}
+
+.content_right .score {
+  width: 73px;
+  height: 73px;
+  border-radius: 50%;
+  position: absolute;
+  top: 52px;
+  right: 0px;
+  background-image: url(img/score.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.content_right .description {
+  font-size: 14px;
+  line-height: 22px;
+  color: #b7bacd;
+  margin-bottom: 70px;
+}
+
+.content_right .footer {
+  height: 55px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content_right .footer .price {
+  width: 105px;
+  height: 100%;
+}
+
+.content_right .footer .price .discount {
+  font-size: 12px;
+  color: #fedc3f;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.content_right .footer .price .price_amount {
+  font-size: 32px;
+}
+
+.content_right .footer .btn {
+  width: 164px;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #13e28d;
+  text-align: center;
+  line-height: 55px;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.content_right .footer .btn:hover {
+  cursor: pointer;
+  background-color: #4beba8;
+}
+
+.wheel {
+  width: 300px;
+  height: 300px;
+  border: 10px solid rgba(255, 255, 255, 0.1);
+  border-top: 10px solid rgba(255, 166, 0, 0.6);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-animation: spin 2000ms linear infinite;
+          animation: spin 2000ms linear infinite;
+}
+
+.paceholder {
+  font-size: 30px;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  line-height: 426px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .active {
   border-bottom: 3px solid #fff;
   color: #fff !important;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 /*# sourceMappingURL=style.css.map */
