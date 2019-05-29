@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+
+$lato: 'Lato', sans-serif;
+    
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+/*------HEADER------*/
+
+.header
+    height: 650px
+    border: 1px solid #000
+    padding-top: 36px
+    background-image: url(img/header/header_bg.jpg)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+
+.header_content
+    width: 1140px
+    // border: 1px solid red
+    margin: 0 auto
+
+.header_top
+    height: 100px
+    // background-color: orange
+    display: flex
+    margin-bottom: 157px
+    .top_logo
+        width: 300px
+        // background-color: green
+        background-image: url(img/header/foliac-logo.png)
+        background-repeat: no-repeat
+        background-position: left center
+        cursor: pointer
+    .top_nav
+        flex-grow: 1
+        // background-color: #ccc
+
+.top_nav ul 
+    list-style: none
+    float: right
+    display: flex
+    // background-color: #ccc
+    height: 100%
+    justify-content: right
+    align-items: center
+    li
+        padding: 0 30px
+        text-align: right
+        a
+            text-decoration: none
+            // background-color: #ccc
+            color: #fff
+            font-family: $lato;
+            font-weight: bold
+            font-size: 16px
+            transition: 150ms
+        a:hover 
+            color: #48bf72
+    li:nth-child(4)
+        padding-right: 0px
+
+.header_title
+    text-transform: uppercase
+    text-align: center
+    font-size: 55px
+    font-family: $lato
+    font-weight: 900
+    margin-bottom: 28px
+    color: #fff
+.header_subtitle
+    text-align: center
+    font-size: 38px
+    text-transform: uppercase
+    font-family: $lato
+    font-weight: lighter
+    margin-bottom: 45px
+    color: #fff
+
+.header_btn
+    width: 138px
+    height: 39px
+    border: 2px solid #48bf72
+    border-radius: 5px
+    margin: 0 auto
+    text-align: center
+    text-transform: uppercase
+    color: #48bf72
+    line-height: 39px
+    font-family: $lato
+    font-weight: bold
+    font-size: 14px
+    transition: 150ms
+    &:hover
+        cursor: pointer
+        background-color: #48bf72
+        color: #fff
+
+
+/*------PORTFOLIO------*/
+
+.portfolio
+    padding-top: 51px
+    height: 800px
+    //border: 5px solid red
+
+.portfolio_content
+    width: 1140px
+    // border: 1px solid red
+    margin: 0 auto
+.portfolio-menu
+    // border: 1px solid blue
+    margin-bottom: 31px
+    ul
+        // border: 1px solid blue
+        display: flex
+        justify-content: space-between
+        width: 795px
+        margin: 0 auto
+        li 
+            list-style: none
+            width: 150px
+            background-color: orange
+            text-align: center
+            background-color: #eaeaea
+            color: #000
+            height: 32px
+            line-height: 32px
+            font-size: 16px
+            font-family: $lato
+            transition: 150ms
+        li:hover 
+            color: #fff
+            background-color: #48bf72
+            cursor: pointer
+        li.active
+            color: #fff
+            background-color: #48bf72
+            cursor: pointer
+.portfolio-item
+    // border: 1px solid blue
+    //grid-row-gap: 40px
+    position: relative
+    width: 850px
+    margin: 0 auto
+    .item
+        // border: 1px solid #000
+        border-radius: 10px
+        overflow: hidden
+        width: 400px
+        height: 300px
+        cursor: pointer        
+        margin: 10px
+        .item_hover
+            background-color: rgba(72, 191, 114, 0.7)
+            height: 100%
+            display: flex
+            align-items: center
+            flex-direction: column
+            justify-content: center
+            opacity: 0
+            transition: 350ms
+    .item:hover > .item_hover
+        opacity: 1
+    .web
+        background-image: url(img/portfolio/img1.png)
+        background-repeat: no-repeat
+        background-position: center
+    .illus
+        background-image: url(img/portfolio/img2.png)
+        background-repeat: no-repeat
+        background-position: center
+    .ui
+        background-image: url(img/portfolio/img3.png)
+        background-repeat: no-repeat
+        background-position: center
+    .motion
+        background-image: url(img/portfolio/img4.png)
+        background-repeat: no-repeat
+        background-position: center
+.item_title
+    font-size: 45px
+    font-family: $lato
+    font-weight: bold
+    color: #fff
+    text-align: center
+    margin-bottom: 20px
+.item_subtitle
+    color: #fff 
+    font-size: 18px
+
+/*------ABOUT------*/
+
+.about
+    height: 500px
+    background-image: url(img/about/about.jpg)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+
+.about_content
+    // border: 1px solid #000 
+    width: 1140px
+    margin: 0 auto
+    display: flex
+    height: 100%
+    > div
+        width: 50%
+        // border: 1px solid red
+        height: 100%
+    .about_right
+        padding-top: 85px
+        .about_title
+            font-size: 40px
+            font-family: $lato
+            color: #fff
+        .about_subtitle
+            font-size: 25px
+            font-family: $lato
+            margin-bottom: 40px
+            color: #fff
+        .about_text
+            font-size: 16px
+            font-family: $lato
+            line-height: 25px
+            margin-bottom: 40px
+            color: #fff
+        .about_btn
+            width: 152px
+            height: 39px
+            border: 2px solid #3c4955
+            border-radius: 7px
+            text-align: center
+            line-height: 37px
+            color: #3c4955
+            transition: 150ms
+        .about_btn:hover
+            background-color: #3c4955
+            color: #fff
+            //border: 2px solid #3c4955
+            cursor: pointer
+
+/*------CONTACT------*/
+
+.contact
+    height: 565px
+    padding-top: 50px
+
+.contact_title
+    font-size: 26px
+    color: #48bf72
+    font-family: $lato
+    font-weight: 900
+    text-transform: uppercase
+    text-align: center
+    margin-bottom: 50px
+
+.contact_forms
+    // border: 1px solid black
+    width: 700px
+    min-height: 200px
+    margin: 0 auto
+    
+    .line_one 
+        display: flex
+        justify-content: space-between
+        margin-bottom: 30px
+        input
+            height: 50px
+            width: 335px
+            border: 2px solid #3c4955
+            background-color: #f1f1f1
+            background-position: left
+            background-repeat: no-repeat
+            padding-left: 75px
+            outline: none
+            color: #a6a5a5
+            font-family: $lato
+            font-weight: bold
+            font-size: 16px
+        input::placeholder
+            color: #a6a5a5
+            font-family: $lato
+            font-weight: bold
+            font-size: 16px
+        .username
+            background-image: url(img/contact/icon-user.png)
+        .email
+            background-image: url(img/contact/icon-email.png)
+    .textarea
+        width: 100%
+        height: 228px
+        border: 2px solid #3c4955
+        outline: none
+        background-image: url(img/contact/icon-message.png)
+        background-position: left
+        background-repeat: no-repeat
+        background-color: #f1f1f1
+        padding-left: 75px
+        color: #a6a5a5
+        font-family: $lato
+        font-weight: bold
+        font-size: 16px
+        padding-top: 12px
+        margin-bottom: 30px
+    .textarea::placeholder
+        color: #a6a5a5
+        font-family: $lato
+        font-weight: bold
+        font-size: 16px
+    .contact_btn
+        width: 100%
+        height: 50px
+        background-color: #48bf72
+        color: #ffffff
+        text-align: center
+        line-height: 50px
+        font-family: $lato
+        font-size: 14px
+        font-weight: bold
+        text-transform: uppercase
+        transition: 150ms
+    .contact_btn:hover
+        cursor: pointer
+        background-color: #59db86
+        
+
+/*------FOOTER------*/
+
+.footer
+    height: 200px
+    background-color: #3c4955
+
+.footer_content
+    width: 1140px
+    height: 100%
+    margin: 0 auto
+    // border: 1px solid red
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .footer_left
+        font-size: 16px
+        font-family: $lato
+        color: #fff
+        width: 365px
+        // border: 1px solid #fff
+    .footer_right
+        width: 317px
+        height: 57px
+        // border: 1px solid #fff
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .right_item
+            width: 50px
+            height: 55px
+            // border: 1px solid #fff
+            background-repeat: no-repeat
+            background-position: center
+            background-size: contain
+        .right_item:hover
+            cursor: pointer
+        .one
+            background-image: url(img/footer/Twitter.png)
+        .two
+            background-image: url(img/footer/LinkedIn.png)
+        .three
+            background-image: url(img/footer/Dribbble.png)
+        .four
+            background-image: url(img/footer/Behance.png)

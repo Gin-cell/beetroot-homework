@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <title>Lesson 6 || Isotope</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="header">
+            <div class="header_content">
+                <div class="header_top">
+                    <div class="top_logo"></div>
+                    <div class="top_nav">
+                        <ul>
+                            <li><a href="#">Accueil</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <h1 class="header_title">voici votre prochain portfolio</h1>
+                <div class="header_subtitle">un template psd simple et gratuit</div>
+                <div class="header_btn">mes travaux</div>
+            </div>
+        </div>
+        <div class="portfolio">
+            <div class="portfolio_content">
+                <div class="portfolio-menu">
+                    <ul>
+                        <li class="active" data-filter="*">Tous les projets</li>
+                        <li data-filter=".web">Webdesign</li>
+                        <li data-filter=".ui">UI/UX design</li>
+                        <li data-filter=".illus">Illustration</li>
+                        <li data-filter=".motion">Motion design</li>
+                    </ul>
+                </div>
+                <div class="portfolio-item">
+                    <div class="item web">
+                        <div class="item_hover">
+                            <p class="item_title">Webdesign</p>
+                            <p class="item_subtitle">Subtitle</p>
+                        </div>
+                    </div>
+                    <div class="item illus">
+                        <div class="item_hover">
+                            <p class="item_title">Forest App</p>
+                            <p class="item_subtitle">application mobile</p>
+                        </div>
+                    </div>
+                    <div class="item ui">
+                        <div class="item_hover">
+                            <p class="item_title">UI/UX design</p>
+                            <p class="item_subtitle">Subtitle</p>
+                        </div>
+                    </div>
+                    <div class="item motion">
+                        <div class="item_hover">
+                            <p class="item_title">Motion design</p>
+                            <p class="item_subtitle">Subtitle</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <div class="about_content">
+                <div class="about_left"></div>
+                <div class="about_right">
+                    <p class="about_title">Michel Dupont</p>
+                    <p class="about_subtitle">Webdesigner, illustrateur, auteur</p>
+                    <p class="about_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <div class="about_btn">Me contacter</div>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <h1 class="contact_title">Me Contacter</h1>
+            <form class="contact_forms">
+                <div class="line_one">
+                    <input type="text" name="text" class="username" placeholder="Votre nom">
+                    <input type="email" name="email" class="email" placeholder="Votre email">
+                </div>
+                <textarea class="textarea" placeholder="Votre message"></textarea>
+                <div class="contact_btn">Envoyer</div>
+            </form>
+        </div>
+        <div class="footer">
+            <div class="footer_content">
+                <div class="footer_left">
+                    Copyright © 2015 by beneggen - www.beneggen.fr
+                </div>
+                <div class="footer_right">
+                    <div class="right_item one"></div>
+                    <div class="right_item two"></div>
+                    <div class="right_item three"></div>
+                    <div class="right_item four"></div>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+    <script src="j.js"></script>
+</body>
+</html>
