@@ -101,6 +101,10 @@ header .title-homework {
     background-color: #ba2455;
 }
 
+.inactive {
+    background-color: #ccc;
+}
+
 footer {
     height: 30px;
     background-color: #66b394;
