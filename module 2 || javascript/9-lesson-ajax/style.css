@@ -79,17 +79,17 @@ h1 {
 }
 
 .accordion {
-  background-image: url(img/accordion.png);
+  background-image: url(img/assignment-1.png);
   background-repeat: no-repeat;
-  background-position: 50% 30%;
-  background-size: 210%;
+  background-position: center;
+  background-size: 180%;
 }
 
 .game_ui {
-  background-image: url(img/game_ui.png);
+  background-image: url(img/assignment-2.png);
   background-repeat: no-repeat;
-  background-position: 50% 30%;
-  background-size: 200%;
+  background-position: center;
+  background-size: 150%;
 }
 
 @-webkit-keyframes showTitle {
