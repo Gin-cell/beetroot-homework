@@ -1,0 +1,74 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body 
+    padding-top: 30px
+    background: linear-gradient(#e66465, #9198e5)
+    height: 100vh
+
+a 
+    text-decoration: none
+
+h1 
+    text-align: center
+    color: orange 
+    font-size: 50px
+    text-shadow: 0 0 2px #444
+    
+.holder
+    width: 800px
+    height: 350px
+    position: absolute
+    // border: 1px solid #000
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    display: flex
+    justify-content: space-around
+.accordion,
+.game_ui
+    height: 350px
+    width: 350px
+    // border: 1px solid red
+    border-radius: 50%
+    box-shadow: 0 10px 60px -10px #ffce75
+    transition: 250ms
+    &:hover
+        cursor: pointer
+        transform: scale(0.95)
+        box-shadow: none
+    .title
+        // border: 1px solid #000
+        height: 100%
+        border-radius: 50%
+        text-align: center
+        line-height: 350px
+        font-size: 55px
+        //text-transform: uppercase
+        font-weight: bold
+        display: none
+        color: #ffce75
+        background-color: rgba(0, 0, 0, 0.5)
+        animation: showTitle 750ms forwards
+    &:hover > .title
+        display: block
+
+.accordion
+    background-image: url(img/accordion.png)
+    background-repeat: no-repeat
+    background-position: 50% 30%
+    background-size: 210%
+
+.game_ui
+    background-image: url(img/game_ui.png)
+    background-repeat: no-repeat
+    background-position: 50% 30%
+    background-size: 200%
+
+@keyframes showTitle
+    from 
+        opacity: 0
+    to 
+        opacity: 1
