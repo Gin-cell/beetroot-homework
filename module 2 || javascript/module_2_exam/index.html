@@ -7,6 +7,7 @@
     <title>Module 2 || Exam</title>
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
 </head>
 <body>
@@ -18,10 +19,10 @@
                     <div class="top_logo"></div>
                     <div class="top_nav">
                         <ul class="nav">
-                            <li class="nav_item"><a href="#">About us</a></li>
-                            <li class="nav_item"><a href="#">Projects</a></li>
-                            <li class="nav_item"><a href="#">News</a></li>
-                            <li class="nav_item"><a href="#">Contact</a></li>
+                            <li class="nav_item"><a href="#about_us">About us</a></li>
+                            <li class="nav_item"><a href="#gallery_projects">Projects</a></li>
+                            <li class="nav_item"><a href="#news">News</a></li>
+                            <li class="nav_item"><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
                     <div class="top_social">
@@ -40,14 +41,14 @@
                     <h1 class="header_title">Simple & Modern</h1>
                     <p class="header_subtitle">We make the world's beautiful every day</p>
                 </div>
-                <a href="#">
+                <a href="#about_us">
                     <div class="scroll_down">
                         <i class="fas fa-chevron-down"></i>
                     </div>
                 </a>
             </div>
         </div>
-        <div class="whatwedo">
+        <div class="whatwedo" id="about_us">
             <div class="whatwedo_content">
                 <div class="whatwedo_line"></div>
                 <h1 class="whatwedo_title">What we do</h1>
@@ -61,7 +62,7 @@
                             Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.
                         </p>
                         <div class="trade_btn">More details</div>
-                        <p class="trade_location"><span><i class="fas fa-map-marker-alt"></i></span>York City, United States - 1776 feet</p>
+                        <p class="trade_location"><span><i class="fas fa-map-marker-alt"></i></span>New York City, United States - 1776 feet</p>
                     </div>
                 </div>
                 <div class="whatwedo_commerce">
@@ -80,23 +81,92 @@
                 </div>
             </div>
         </div>
-        <div class="news">
+        <div class="news" id="news">
             <div class="news_line"></div>
             <h1 class="news_title">Latest news</h1>
-            <div class="news_gallery"></div>
+            <div class="news_gallery">
+                <div class="gallery_item">
+                    <div class="item_inner"></div>
+                </div>
+                <div class="gallery_item">
+                    <div class="item_inner"></div>
+                </div>
+                <div class="gallery_item">
+                    <div class="item_inner"></div>
+                </div>
+                <div class="gallery_item">
+                    <div class="item_inner"></div>
+                </div>
+                <div class="gallery_item">
+                    <div class="item_inner"></div>
+                </div>
+                <div class="gallery_item">
+                    <div class="item_inner"></div>
+                </div>
+            </div>
         </div>
-        <div class="gallery">
+        <div class="gallery" id="gallery_projects">
             <div class="gallery_line"></div>
-            <h1 class="gallery_title">Latest news</h1>
-            <div class="gallery_gallery"></div>
+            <h1 class="gallery_title">Gallery</h1>
+            <div class="gallery_gallery">
+                <div class="gallery_left"></div>
+                <div class="gallery_right">
+                    <div class="item_one"></div>
+                    <div class="item_two"></div>
+                    <div class="item_three"></div>
+                    <div class="item_four"></div>
+                </div>
+            </div>
             <div class="gallery_btn">See more</div>
         </div>
-        <div class="gmap"></div>
-        <div class="footer">
-            <div class="footer_content"></div>
+        <div class="gmap" id="google_maps">
+
+        </div>
+        <div class="footer" id="contact">
+            <form action="#" class="footer_form">
+                <div class="form_line"></div>
+                <h1 class="form_title">Get in touch</h1>
+                <div class="form_content">
+                    <div class="form_left">
+                        <p class="left_item"><span><i class="fas fa-map-marker-alt"></i></span>91 Nolan Extensions Suite 670</p>
+                        <p class="left_item"><span><i class="fas fa-phone-volume"></i></span>+001 356-868-2454</p>
+                        <p class="left_item"><span><i class="fas fa-inbox"></i></span>gahuy93@gmail.com</p>
+                        <p class="left_item"><span><i class="far fa-clock"></i></span>From 07:05AM to 19:30PM</p>
+                    </div>
+                    <div class="form_right">
+                        <input type="text" class="form_name" placeholder="Full name" required>
+                        <input class="last_input" type="email" class="form_email" placeholder="Email" required>
+                        <button type="submit" class="form_submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+            <div class="footer_content">
+                <div class="footer_left">
+                    <div class="footer_logo"></div>
+                    <div class="footer_txt">
+                        Copyrights &copy; 2017 Monticello  |  Made with <i class="fas fa-heart"></i> by Ga Huy
+                    </div>
+                </div>
+                <div class="footer_right">
+                    <div class="top_social">
+                        <div class="social_item">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div class="social_item">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div class="social_item">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClM0P_r9QW8lRKtG4h19R3o3rcLKWheUc"></script>
+    <script src="j.js"></script>
 </body>
 </html>
