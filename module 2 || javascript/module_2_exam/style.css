@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: 'gothamBold';
-  src: url(fonts/GothamBold.ttf);
+  src: url(fonts/Gotham-Bold.otf);
 }
 
 @font-face {
@@ -32,7 +32,6 @@ body {
 
 /********HEADER********/
 .header {
-  display: none;
   height: 100vh;
   padding-top: 40px;
   position: relative;
@@ -194,7 +193,6 @@ body {
 .whatwedo {
   height: 1633px;
   padding-top: 100px;
-  display: none;
 }
 
 .whatwedo_content {
@@ -425,6 +423,11 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding-top: 60px;
+  position: absolute;
+  top: 510px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .slick-dots li {
@@ -447,11 +450,78 @@ body {
   height: 100%;
   border: 1px solid red;
   margin: 0 auto;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 265px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.item_inner .item_title {
+  font-size: 22px;
+  font-family: "gothamBold";
+  text-transform: uppercase;
+  letter-spacing: 0.0100em;
+  color: #2c4058;
+  line-height: 34px;
+  margin-bottom: 15px;
+}
+
+.item_inner .item_text {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: #4b5562;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+
+.item_bottom {
+  height: 60px;
+  border: 1px solid #000;
+  position: absolute;
+  width: 350px;
+  bottom: 30px;
+}
+
+.item_bottom .bottom_img {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.item_bottom .img_one {
+  background-image: url(img/news/author1.png);
+}
+
+.item_bottom .img_two {
+  background-image: url(img/news/author2.png);
+}
+
+.item_bottom .img_three {
+  background-image: url(img/news/author3.png);
+}
+
+.bottom_title {
+  border: 1px solid orange;
+  height: 100%;
+}
+
+.inner_one {
+  background-image: url(img/news/Img1.jpg);
+}
+
+.inner_two {
+  background-image: url(img/news/Img2.jpg);
+}
+
+.inner_three {
+  background-image: url(img/news/Img3.jpg);
 }
 
 /********GALLERY********/
 .gallery {
-  display: none;
   height: 1000px;
   padding-top: 140px;
 }
@@ -551,13 +621,11 @@ body {
 /********GMAP********/
 .gmap {
   height: 700px;
-  display: none;
   background-color: orange;
 }
 
 /********FOOTER********/
 .footer {
-  display: none;
   height: 525px;
   background-image: url(img/footer/footer_bg.jpg);
   background-position: center;

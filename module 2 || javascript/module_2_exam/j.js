@@ -31,8 +31,8 @@
     speed: 600,
     slidesToShow: 3,
     adaptiveHeight: true,
-    //autoplay: true,
-    //autoplaySpeed: 2000
+   //  autoplay: true,
+   //  autoplaySpeed: 2000
   });
 
 //---------footer_form---------

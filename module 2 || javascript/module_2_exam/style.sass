@@ -4,7 +4,7 @@
     src: url(fonts/GothamBook.ttf)
 @font-face
     font-family: 'gothamBold'
-    src: url(fonts/GothamBold.ttf)
+    src: url(fonts/Gotham-Bold.otf)
 @import url(https://fonts.googleapis.com/css?family=Open+Sans&display=swap)
 @font-face
     font-family: 'gothamMedium'
@@ -29,7 +29,7 @@ body
 
 /********HEADER********/
 .header
-    display: none
+    //display: none
     height: 100vh
     //border: 1px solid #000
     padding-top: 40px
@@ -146,7 +146,7 @@ body
 .whatwedo
     height: 1633px
     padding-top: 100px
-    display: none
+    //display: none
 .whatwedo_content
     //border: 1px solid #000
     width: 1170px
@@ -293,7 +293,7 @@ body
     .gallery_item
         width: 370px
         height: 515px
-        //border: 1px solid red
+        //border: 1px solid green
 
 .slick-prev
     width: 40px
@@ -323,6 +323,10 @@ body
     margin: 0 auto
     justify-content: space-around
     padding-top: 60px
+    position: absolute
+    top: 510px
+    left: 50%
+    transform: translateX(-50%)
     li 
         width: 9px
         height: 9px
@@ -337,12 +341,63 @@ body
     width: 370px
     height: 100%
     border: 1px solid red
-    margin: 0 auto     
+    margin: 0 auto 
+    background-color: #fff    
+    background-repeat: no-repeat
+    background-position: top center
+    padding-top: 265px
+    padding-left: 20px
+    position: relative
+    //padding-right: 20px
+    .item_title
+        font-size: 22px
+        font-family: $gothamBold
+        text-transform: uppercase
+        letter-spacing: 0.0100em
+        color: #2c4058
+        line-height: 34px
+        margin-bottom: 15px
+    .item_text
+        font-size: 18px
+        font-family: $openSans
+        color: #4b5562
+        line-height: 30px
+        margin-bottom: 35px
+.item_bottom
+    height: 60px
+    border: 1px solid #000
+    position: absolute
+    width: 350px
+    bottom: 30px
+    .bottom_img
+        width: 60px
+        height: 60px
+        border: 1px solid #000 
+        border-radius: 50%
+    .img_one
+        background-image: url(img/news/author1.png)
+    .img_two
+        background-image: url(img/news/author2.png)
+    .img_three
+        background-image: url(img/news/author3.png)
+.bottom_title
+    border: 1px solid orange
+    height: 100%
+    
+        
+.inner_one
+    background-image: url(img/news/Img1.jpg)
+.inner_two
+    background-image: url(img/news/Img2.jpg)
+.inner_three
+    background-image: url(img/news/Img3.jpg)
+
+
 
 
 /********GALLERY********/
 .gallery
-    display: none
+    //display: none
     height: 1000px
     padding-top: 140px
     .gallery_line
@@ -410,12 +465,12 @@ body
 /********GMAP********/
 .gmap
     height: 700px
-    display: none
+    //display: none
     background-color: orange
 
 /********FOOTER********/
 .footer
-    display: none
+    //display: none
     height: 525px
     background-image: url(img/footer/footer_bg.jpg)
     background-position: center
