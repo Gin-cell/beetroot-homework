@@ -446,6 +446,7 @@ body {
 .news_gallery .gallery_item {
   width: 370px;
   height: 515px;
+  outline: none;
 }
 
 .news .slick-prev {
@@ -920,13 +921,12 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   width: 100%;
-  height: 100vh;
-  z-index: 1;
-}
-
-.modals_bg.active {
-  opacity: 1;
-  display: block;
+  height: 100%;
+  top: 0;
+  display: none;
+  z-index: 99;
+  -webkit-animation: showModalBG 800ms forwards;
+          animation: showModalBG 800ms forwards;
 }
 
 .trade_center,
@@ -1084,5 +1084,117 @@ body {
   padding-right: 17px;
   padding-left: 30px;
   padding-top: 30px;
+}
+
+.trade_modal {
+  display: none;
+  -webkit-animation: showModal 700ms forwards;
+          animation: showModal 700ms forwards;
+}
+
+.commerce_modal {
+  display: none;
+  -webkit-animation: showModal 700ms forwards;
+          animation: showModal 700ms forwards;
+}
+
+.active {
+  display: block !important;
+}
+
+@-webkit-keyframes showModalBG {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes showModalBG {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes hideModalBG {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes hideModalBG {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes showModal {
+  from {
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%) scale(0);
+            transform: translate(-50%, 0%) scale(0);
+  }
+  to {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes showModal {
+  from {
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%) scale(0);
+            transform: translate(-50%, 0%) scale(0);
+  }
+  to {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@-webkit-keyframes hideModal {
+  from {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+  to {
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%) scale(0);
+            transform: translate(-50%, 0%) scale(0);
+  }
+}
+
+@keyframes hideModal {
+  from {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+  to {
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%) scale(0);
+            transform: translate(-50%, 0%) scale(0);
+  }
 }
 /*# sourceMappingURL=style.css.map */

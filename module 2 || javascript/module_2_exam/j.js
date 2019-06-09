@@ -1,44 +1,3 @@
-//---------modals---------
-// var modalBG = document.querySelector('.modals_bg');
-// var trade_modal = document.querySelector('#modal-content');
-// var btn = document.querySelector('#btn');
-// var closeBtn = document.querySelector('.closeBtn');
-
-// btn.addEventListener('click', openModal);
-// closeBtn.addEventListener('click', closeModal);
-// window.addEventListener('click', outsideClick);
-
-// function openModal() {
-//    modal.style.display = 'block';
-//    modal.style.animationName = '';
-//    modalContent.style.animationName = '';
-// }
-
-// function closeModal() {
-//   //modal.style.display = 'none';
-//   modal.style.animationName = 'fadeOut';
-//   modal.style.animationDuration = '800ms';
-//   modalContent.style.animationName = 'hide';
-//   modalContent.style.animationDuration = '1s';
-//   setTimeout(close, 800);
-// }
-
-// function outsideClick(e) {
-//   if (e.target == modal) {
-//     //modal.style.display = 'none';
-//     modal.style.animationName = 'fadeOut';
-//   	modal.style.animationDuration = '800ms';
-//   	modalContent.style.animationName = 'hide';
-//   	modalContent.style.animationDuration = '1s';
-//   	setTimeout(close, 800);
-//   }
-// }
-
-// function close() {
-// 	modal.style.display = 'none';
-// }
-
-
 //---------google_maps---------
 (function($) {
     $(window).on('load', function () {
@@ -92,3 +51,35 @@ $(document).ready(function () {
         $(this).addClass('focus');
     })
 })
+
+//---------modals---------
+$('#tradeBtn').click(function () {
+   $('.modals_bg').addClass('active');
+   $('.modals_bg').css('animation', '');
+   setTimeout(function () {
+      $('.trade_modal').css('display', 'block');
+      $('.trade_modal').css('animation', '');
+   }, 500);
+})
+$('#commerceBtn').click(function () {
+   $('.modals_bg').addClass('active');
+   $('.modals_bg').css('animation', '');
+   setTimeout(function () {
+      $('.commerce_modal').css('display', 'block');
+      $('.commerce_modal').css('animation', '');
+   }, 500);
+})
+$('.close-btn').click(function () {
+   $('.modals_bg').css('animation', 'hideModalBG 800ms forwards');
+   $('.trade_modal').css('animation', 'hideModal 800ms forwards')
+   $('.commerce_modal').css('animation', 'hideModal 800ms forwards')
+   setTimeout(function () {
+      $('.modals_bg').removeClass('active');
+      $('.modals_bg').css('animation', 'animation: showModal 500ms forwards');
+      $('.trade_modal').css('display', 'none');
+      $('.trade_modal').css('animation', 'showModal 500ms forwards');
+      $('.commerce_modal').css('display', 'none');
+      $('.commerce_modal').css('animation', 'showModal 500ms forwards');
+   }, 500)
+})
+
