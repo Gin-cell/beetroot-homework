@@ -32,7 +32,6 @@ body {
 
 /********SLIDER********/
 .slider_holder {
-  display: none;
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -96,7 +95,6 @@ body {
 
 /********HEADER********/
 .header {
-  display: none;
   height: 100vh;
   padding-top: 40px;
   position: relative;
@@ -254,7 +252,6 @@ body {
 .whatwedo {
   height: 1633px;
   padding-top: 100px;
-  display: none;
 }
 
 .whatwedo_content {
@@ -351,7 +348,7 @@ body {
   height: 50px;
   border: 1px solid #2c4058;
   text-align: center;
-  line-height: 58px;
+  line-height: 50px;
   font-size: 14px;
   text-transform: uppercase;
   cursor: pointer;
@@ -415,7 +412,6 @@ body {
 
 /********NEWS********/
 .news {
-  display: none;
   height: 1035px;
   background-image: url(img/news/news_bg.jpg);
   background-position: bottom center;
@@ -632,7 +628,6 @@ body {
 
 /********GALLERY********/
 .gallery {
-  display: none;
   height: 1000px;
   padding-top: 140px;
 }
@@ -683,7 +678,7 @@ body {
   height: 50px;
   border: 1px solid #2c4058;
   text-align: center;
-  line-height: 58px;
+  line-height: 50px;
   font-size: 14px;
   text-transform: uppercase;
   cursor: pointer;
@@ -732,13 +727,11 @@ body {
 /********GMAP********/
 .gmap {
   height: 700px;
-  display: none;
   background-color: orange;
 }
 
 /********FOOTER********/
 .footer {
-  display: none;
   height: 525px;
   background-image: url(img/footer/footer_bg.jpg);
   background-position: center;
@@ -928,6 +921,7 @@ body {
   position: fixed;
   width: 100%;
   height: 100vh;
+  z-index: 1;
 }
 
 .modals_bg.active {
@@ -1090,23 +1084,5 @@ body {
   padding-right: 17px;
   padding-left: 30px;
   padding-top: 30px;
-}
-
-.commerce_modal {
-  display: none;
-}
-
-@-webkit-keyframes showModals {
-  from {
-  }
-  to {
-  }
-}
-
-@keyframes showModals {
-  from {
-  }
-  to {
-  }
 }
 /*# sourceMappingURL=style.css.map */
