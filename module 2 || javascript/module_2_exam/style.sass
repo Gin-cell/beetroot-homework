@@ -9,11 +9,15 @@
 @font-face
     font-family: 'gothamMedium'
     src: url(fonts/GothamMedium_1.ttf)
+@font-face
+    font-family: 'gothamLight'
+    src: url(fonts/Gotham-Light.otf)
 //********VARIABLES
 $gothamBook: 'gothamBook';
 $gothamBold: 'gothamBold';
 $openSans: 'Open Sans', sans-serif;
 $gothamMedium: 'gothamMedium';
+$gothamLight: 'gothamLight';
 //$gothamRegular: 'Gotham\ Medium\ Regular';
 /********GENERAL********/
 *
@@ -106,6 +110,8 @@ body
     height: 100%
     justify-content: space-around
     align-items: center
+    .nav_item
+        color: #fff
     .nav_item a
         color: #fff
         text-decoration: none
@@ -113,10 +119,10 @@ body
         font-size: 14px
         transition: 200ms
         letter-spacing: 0.100em
-        font-family: 'gothamBook'
+        font-family: $gothamLight
         cursor: pointer !important
     .nav_item:hover 
-        color: #2c4058
+        color: #fff
         cursor: pointer
     .nav_item:hover
         list-style: circle
@@ -255,7 +261,7 @@ body
         height: 50px
         border: 1px solid #2c4058
         text-align: center
-        line-height: 50px
+        line-height: 58px
         font-size: 14px
         text-transform: uppercase
         cursor: pointer
@@ -517,7 +523,7 @@ body
         height: 50px
         border: 1px solid #2c4058
         text-align: center
-        line-height: 50px
+        line-height: 58px
         font-size: 14px
         text-transform: uppercase
         cursor: pointer

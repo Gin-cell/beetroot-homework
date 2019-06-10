@@ -15,6 +15,11 @@
   src: url(fonts/GothamMedium_1.ttf);
 }
 
+@font-face {
+  font-family: 'gothamLight';
+  src: url(fonts/Gotham-Light.otf);
+}
+
 /********GENERAL********/
 * {
   margin: 0;
@@ -142,6 +147,10 @@ body {
           align-items: center;
 }
 
+.nav .nav_item {
+  color: #fff;
+}
+
 .nav .nav_item a {
   color: #fff;
   text-decoration: none;
@@ -150,12 +159,12 @@ body {
   -webkit-transition: 200ms;
   transition: 200ms;
   letter-spacing: 0.100em;
-  font-family: 'gothamBook';
+  font-family: "gothamLight";
   cursor: pointer !important;
 }
 
 .nav .nav_item:hover {
-  color: #2c4058;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -348,7 +357,7 @@ body {
   height: 50px;
   border: 1px solid #2c4058;
   text-align: center;
-  line-height: 50px;
+  line-height: 58px;
   font-size: 14px;
   text-transform: uppercase;
   cursor: pointer;
@@ -679,7 +688,7 @@ body {
   height: 50px;
   border: 1px solid #2c4058;
   text-align: center;
-  line-height: 50px;
+  line-height: 58px;
   font-size: 14px;
   text-transform: uppercase;
   cursor: pointer;
